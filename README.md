@@ -36,6 +36,7 @@ Coming Soon....
 - [x] Build install script.
 - [ ] Build uninstall script.
 - [ ] Build update script.
-- [ ] Add instructions for creating Intune App.
-- [ ] Add instructions for creating Automate App.
+- [x] Add instructions for creating Intune App.
+- [x] Add instructions for creating Automate App.
+- [ ] Finish instructions.
 - [ ] Plan version 2.
