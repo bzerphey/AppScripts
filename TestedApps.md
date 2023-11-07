@@ -1,5 +1,5 @@
 # Tested App Versions
 
 ## ZAC
-Version: 8.4.32
+Versions: {8.4.32} <br>
 Type: EXE
