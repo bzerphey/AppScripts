@@ -3,11 +3,6 @@
 #Function: Default install script for Telecom Apps.
 #Version: 1.0
 #Author: Brian Zerphey
-####TODO###
-#1. Fix if logic for MSI
-#2. Make prerun and check a function.
-#3. Create Log file.
-#4. C:\TBSI_Repo folder check logic.
 ########################################
 param (
     [Parameter(Position=0,mandatory=$true)]
