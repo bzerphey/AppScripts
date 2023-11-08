@@ -137,7 +137,6 @@ try {
         Logger -level INFO -message "Program installed successfully." -log $log
     }else{
         Logger -level ERROR -message "Program did not install correctly." -log $log
-        Throw "error"
     }
 }
 catch {
