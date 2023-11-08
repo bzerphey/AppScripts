@@ -8,11 +8,12 @@
 ### Automate
 1. Create a new script under Telecom Scripts>Software Installs.
 2. Name the script "App Prettyname" vX.X.X - (Install/Uninstall/Update).
-3. Add a download tasks under the <b>Then</b> section for both install files and scripts. This should pull from https://telecombusiness.ftphosting.net/.
+3. Add a download task under the <b>Then</b> section for the scripts. The download link is: https://raw.githubusercontent.com/bzerphey/AppScripts/main/Install.ps1 
+4. You must create a separate link for the install files unless the vendor allows pulling from them directly. This should pull from https://telecombusiness.ftphosting.net/.
    - You must first create a share link.
    - Next go to the share link and copy the download link of the file you need to download.
    - Use curl to download.
-4. Add a Shell function using the following syntact: 
+5. Add a Shell function using the following syntact: 
 ```
 powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -fileDL "LinktoDownload" -switch "AlternativeSwitches:Optional"
 ```
