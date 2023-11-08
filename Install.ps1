@@ -1,7 +1,7 @@
 ########################################
 ###Info###
 #Function: Default install script for Telecom Apps.
-#Version: 1.0
+#Version: 1.2
 #Author: Brian Zerphey
 ########################################
 param (
@@ -11,43 +11,83 @@ param (
     $name, #software name as it would appear in automate
     [Parameter(Position=2,mandatory=$true)]
     $version, #software version installing
+    [Parameter(Position=3,mandatory=$true)]
+    $fileDL, #download link for installer
     [Parameter(Mandatory=$false)]
     [string[]]$switch, #switch array
     [Parameter(Mandatory=$false)]
-    $log #Logging 0/null for no logging, 1 for basic logging, 2 for verbose
+    [bool]$log = $false #Logging 
 )
+
+###
+#Functions
+###
+$LogFile = "C:\TBSI_Repo\Install_$($name).log"
+
+function Logger {
+    param(
+        [Parameter(Mandatory = $true)][string] $message,
+        [Parameter(Mandatory = $false)] [ValidateSet("INFO","WARNING","ERROR")] [string] $level = "INFO",
+        [Parameter(Mandatory = $true)][bool] $log
+    )
+
+    If ($log -eq $true){
+        $Timestamp = (Get-Date).toString("yyyy/MM/dd HH:mm:ss")
+        Add-Content -Path $LogFile -Value "$timestamp [$level] - $message"
+    }
+}
 
 ###
 #Real Work
 ###
 
+Logger -level INFO -message "Starting script..." -log $log
+
+Logger -level INFO -message "Setting directory location..." -log $log
+#Directory check/creation
 Set-Location -Path "C:\TBSI_Repo"
+
+#Download files
+Logger -level INFO -message "Downloading install files..." -log $log
+
+try {
+    curl.exe $fileDL -o ".\$($file)"
+}
+catch {
+    Logger -level ERROR -message "An error occured in curl request: $_" -log $log
+    Exit
+} 
 
 #File Check
 $installer = ".\" + $file
 
-try {
-    Test-Path $installer
-}
-catch {
-    Write-Error "Install file not found."
+Logger -level INFO -message "Checking for install file..." -log $log
+
+If (!(Test-Path -Path $installer)){
+    Logger -level ERROR -message "Install file not found." -log $log
+    Exit
 }
 
+Logger -level INFO -message "File found..." -log $log
+
+Logger -level INFO -message "Checking for previous installations..." -log $log
 #Installed Check
 try {
     $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
 
     If ($arrProgram -ne $null){
-            Write-Error "A version of $($name) is already installed. Please remove and run again."
+            Logger -level ERROR -message "A version of $($name) is already installed. Please remove and run again." -log $log
             exit
     }
 }
 catch {
-    Write-Error "An error occured at prerun: $_"
+    Logger -level ERROR -message "An error occured at prerun: $_" -log $log
 }
 
+Logger -level INFO -message "No installations found. Starting install..." -log $log
 #Run
 if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::GetExtension($file) -eq ".EXE")) {
+    Logger -level INFO -message "Install file is an EXE. Starting EXE logic..." -log $log
     if ($switch -ne $null){
         $executeargs = $switch
     }Else{
@@ -60,10 +100,12 @@ if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::Ge
         Start-Process $installer -Wait -ArgumentList $executeargs
     }
     catch {
-        Write-Error "An error occured in run for exe: $_"
+        Logger -level ERROR -message "An error occured in run for exe: $_" -log $log
+        Exit
     }
     
 }else{#if (([System.IO.Path]::GetExtension($installfile) -eq ".msi") -or ([System.IO.Path]::GetExtension($installfile) -eq ".MSI")) {
+    Logger -level INFO -message "Install file is an MSI. Starting MSI logic..." -log $log
     if ($switch -ne $null){
         $executeargs = @(
         "/i"
@@ -81,22 +123,24 @@ if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::Ge
         Start-Process "msiexec.exe" -Wait -ArgumentList $executeargs
     }
     catch {
-        Write-Error "An error occured in run for msi: $_"
+        Logger -level ERROR -message "An error occured in run for msi: $_" -log $log
+        Exit
     }
 }
 
 #Confirm Installtion
+Logger -level INFO -message "Install complete. Performing followup..." -log $log
 $i += 1
 try {
     $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
 
     If (($arrProgram -ne $null) -and ($arrProgram.version = $version)){
-            Write-Host "Program installed successfully."
+        Logger -level INFO -message "Program installed successfully." -log $log
     }else{
-        Write-Error "Program did not install correctly."
+        Logger -level ERROR -message "Program did not install correctly." -log $log
     }
 }
 catch {
-    Write-Error "An error occured at post install check: $_"
+    Logger -level ERROR -message "An error occured at post install check: $_" -log $log
 }
 #The End

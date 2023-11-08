@@ -14,7 +14,7 @@
    - Use curl to download.
 4. Add a Shell function using the following syntact: 
 ```
-powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -switch "AlternativeSwitches:Optional"
+powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -fileDL "LinktoDownload" -switch "AlternativeSwitches:Optional"
 ```
 
 ### Intune
@@ -26,7 +26,7 @@ IntuneWinAppUtilexe -c "RootFolderWithScriptsandFiles"-s "FullPathToInstallScrip
 3. Create new Intune app.
 4. Use the following for the install command:
 ```
-powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -switch "AlternativeSwitches:Optional"
+powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -fileDL "LinktoDownload" -switch "AlternativeSwitches:Optional"
 ```
 5. Use the following for the uninstall command:
 ```
@@ -37,14 +37,13 @@ Coming Soon....
 
 ## Tasks
 - [ ] Build install script.
-  - [ ] Create download logic for install files. 
+  - [x] C:\TBSI_Repo folder check logic.
+  - [x] Create download logic for install files.
+  - [x] Create Log file. 
   - [ ] Fix if logic for MSI
-  - [ ] Make prerun and check a function.
-  - [ ] Create Log file.
-  - [ ] C:\TBSI_Repo folder check logic.
+  - [ ] Point Automate to pull script from GitHub
 - [ ] Build uninstall script.
 - [ ] Build update script.
 - [ ] Finish instructions for creating Intune App.
 - [ ] Finish instructions for creating Automate App.
-- [ ] Finish instructions.
-- [ ] Plan version 2.
+- [ ] Plan version 2 with modules.
