@@ -19,8 +19,9 @@ powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -na
 ```
 6. On line 3, add a Resend Software task.
 7. On line 4, add IF SOFTWARE INSTALLED THEN Jump to line 6.
-8. On line 5, Script Exit with Error.
+8. On line 5, add Script Exit with Error.
 9. On line 6, add an exit script.
+10. If script ends in error, go to C:\TBSI_Repo\Install_'Program'.log via the file explorer tool in Automate to find the error.
 
 ### Intune
 1. Create folder with scripts and install file.
