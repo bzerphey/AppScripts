@@ -17,6 +17,10 @@
 ```
 powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
 ```
+6. On line 3, add a Resend Software task.
+7. On line 4, add IF SOFTWARE INSTALLED THEN Jump to line 6.
+8. On line 5, Script Exit with Error.
+9. On line 6, add an exit script.
 
 ### Intune
 1. Create folder with scripts and install file.
