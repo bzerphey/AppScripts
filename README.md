@@ -15,7 +15,7 @@
    - Use curl to download.
 5. Add a Shell function using the following syntact: 
 ```
-powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -fileDL "LinktoDownload" -switch "AlternativeSwitches:Optional"
+powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
 ```
 
 ### Intune
@@ -27,7 +27,7 @@ IntuneWinAppUtilexe -c "RootFolderWithScriptsandFiles"-s "FullPathToInstallScrip
 3. Create new Intune app.
 4. Use the following for the install command:
 ```
-powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -fileDL "LinktoDownload" -switch "AlternativeSwitches:Optional"
+powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
 ```
 5. Use the following for the uninstall command:
 ```
@@ -42,7 +42,9 @@ Coming Soon....
   - [x] Create download logic for install files.
   - [x] Create Log file. 
   - [ ] Fix if logic for MSI
-  - [ ] Point Automate to pull script from GitHub
+  - [x] Point Automate to pull script from GitHub
+  - [ ] Add a return for Automate logging.
+  - [ ] Add cleanup logic
 - [ ] Build uninstall script.
 - [ ] Build update script.
 - [ ] Finish instructions for creating Intune App.

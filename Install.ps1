@@ -1,7 +1,6 @@
 ########################################
 ###Info###
 #Function: Default install script for Telecom Apps.
-#Version: 1.2
 #Author: Brian Zerphey
 ########################################
 param (
@@ -143,4 +142,5 @@ try {
 catch {
     Logger -level ERROR -message "An error occured at post install check: $_" -log $log
 }
+Throw "error"
 #The End
