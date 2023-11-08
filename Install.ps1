@@ -6,6 +6,8 @@
 ####TODO###
 #1. Fix if logic for MSI
 #2. Make prerun and check a function.
+#3. Create Log file.
+#4. C:\TBSI_Repo folder check logic.
 ########################################
 param (
     [Parameter(Position=0,mandatory=$true)]
@@ -15,7 +17,9 @@ param (
     [Parameter(Position=2,mandatory=$true)]
     $version, #software version installing
     [Parameter(Mandatory=$false)]
-    [string[]]$switch #switch array
+    [string[]]$switch, #switch array
+    [Parameter(Mandatory=$false)]
+    $log #Logging 0/null for no logging, 1 for basic logging, 2 for verbose
 )
 
 ###

@@ -8,7 +8,9 @@
 ### Automate
 1. Create a new script under Telecom Scripts>Software Installs.
 2. Name the script "App Prettyname" vX.X.X - (Install/Uninstall/Update).
-3. Add a download task under the <b>Then</b> section.
+3. Add a download tasks under the <b>Then</b> section for both install files and scripts. This should pull from https://telecombusiness.ftphosting.net/.
+   - You must first create a share link.
+   - Next go to the share link and copy the download link of the file you need to download.
 4. Add a Shell function using the following syntact: 
 ```
 powershell.exe -executionpolicy bypass .\Install.ps1 -file "InstallFileName" -name "AppName" -version "AppVersion" -switch "AlternativeSwitches:Optional"
@@ -33,7 +35,11 @@ Coming Soon....
 
 
 ## Tasks
-- [x] Build install script.
+- [o] Build install script.
+  - [ ] Fix if logic for MSI
+  - [ ] Make prerun and check a function.
+  - [ ] Create Log file.
+  - [ ] C:\TBSI_Repo folder check logic.
 - [ ] Build uninstall script.
 - [ ] Build update script.
 - [x] Add instructions for creating Intune App.
