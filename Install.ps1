@@ -18,12 +18,10 @@ param (
     [bool]$log = $false #Logging 
 )
 
-$repo = C:\Windows\LTSvc\packages
-
 ###
 #Functions
 ###
-$LogFile = "$repo\Install_$($name).log"
+$LogFile = "C:\TBSI_Repo\Install_$($name).log"
 
 function Logger {
     param(
@@ -42,8 +40,8 @@ function Logger {
 #Real Work
 ###
 
-If(!(Test-Path -Path "$repo")){
-    New-Item -ItemType Directory -Path "$repo"
+If(!(Test-Path -Path "C:\TBSI_Repo")){
+    New-Item -ItemType Directory -Path "C:\TBSI_Repo"
 }
 
 Logger -level INFO -message "Starting script..." -log $log
@@ -51,7 +49,7 @@ Logger -level INFO -message "Starting script..." -log $log
 Logger -level INFO -message "Setting directory location..." -log $log
 
 #Directory check/creation
-Set-Location -Path "$repo"
+Set-Location -Path "C:\TBSI_Repo"
 
 #Download files
 Logger -level INFO -message "Downloading install files..." -log $log
