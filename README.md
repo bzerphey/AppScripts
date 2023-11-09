@@ -50,9 +50,9 @@ Coming Soon....
   - [ ] Fix if logic for MSI
   - [x] Point Automate to pull script from GitHub
   - [x] ~~Add a return for Automate logging.~~ Built in logger that creates logs file on computer.
-  - [ ] Add script cleanup logic
+  - [x] Add script cleanup logic **Needs tested**
   - [ ] Turn off logging for the Automate script or build 2 scripts.
-  - [ ] Add follow-up task param, logic, and script.
+  - [x] Add follow-up task param and logic. Script will be unique. **Needs tested**
 - [ ] Build uninstall script.
   - [ ] Build folder creation logic.
   - [ ] Build function to search registry for uninstall string.

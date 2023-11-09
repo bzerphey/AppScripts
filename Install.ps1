@@ -15,7 +15,9 @@ param (
     [Parameter(Mandatory=$false)]
     [string[]]$switch, #switch array
     [Parameter(Mandatory=$false)]
-    [bool]$log = $false #Logging 
+    [bool]$log = $false, #Logging 
+    [Parameter(Mandatory=$false)]
+    [bool]$fuTask = $false #Follow-up task script 
 )
 
 ###
@@ -152,15 +154,27 @@ catch {
     Logger -level ERROR -message "An error occured at post install check: $_" -log $log
 }
 
-#Cleanuo
+#Follow-up task
+Logger -level INFO -message "Checking for follow-up task..." -log $log
+
+if($fuTask -eq $true){
+    Logger -level INFO -message "Follow-up task found. Running script..." -log $log
+    Start-Process ".\$($fuTask) -logfile $LogFile -log $log" -Wait
+}else{
+    Logger -level INFO -message "No follow-up task found" -log $log
+}
+
+#Cleanup
 Logger -level INFO -message "Starting Cleanup..." -log $log
 
 Logger -level INFO -message "Removing install script..." -log $log
-try {
-    Remove-Item -Path 'C:\Windows\LTSvc\packages\Install.ps1' -Force        
-}
-catch {
-    Logger -level ERROR -message "Could not remove install.ps1. Please remove manually." -log $log
+if (Test-Path -Path "C:\Windows\LTSvc\packages\Install.ps1"){
+    try {
+        Remove-Item -Path 'C:\Windows\LTSvc\packages\Install.ps1' -Force        
+    }
+    catch {
+        Logger -level ERROR -message "Could not remove install.ps1. Please remove manually." -log $log
+    }
 }
 
 Logger -level INFO -message "Removing install file..." -log $log
@@ -170,4 +184,5 @@ try {
 catch {
     Logger -level ERROR -message "Could not remove install file." -log $log
 }
+
 #The End
