@@ -52,6 +52,7 @@ Coming Soon....
   - [x] ~~Add a return for Automate logging.~~ Built in logger that creates logs file on computer.
   - [ ] Add script cleanup logic
   - [ ] Turn off logging for the Automate script or build 2 scripts.
+  - [ ] Add follow-up task param, logic, and script.
 - [ ] Build uninstall script.
   - [ ] Build folder creation logic.
   - [ ] Build function to search registry for uninstall string.

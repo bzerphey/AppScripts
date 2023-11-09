@@ -152,4 +152,22 @@ catch {
     Logger -level ERROR -message "An error occured at post install check: $_" -log $log
 }
 
+#Cleanuo
+Logger -level INFO -message "Starting Cleanup..." -log $log
+
+Logger -level INFO -message "Removing install script..." -log $log
+try {
+    Remove-Item -Path 'C:\Windows\LTSvc\packages\Install.ps1' -Force        
+}
+catch {
+    Logger -level ERROR -message "Could not remove install.ps1. Please remove manually." -log $log
+}
+
+Logger -level INFO -message "Removing install file..." -log $log
+try {
+    Remove-Item -Path 'C:\TBSI_Repo\$($file)' -Force        
+}
+catch {
+    Logger -level ERROR -message "Could not remove install file." -log $log
+}
 #The End
