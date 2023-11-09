@@ -9,7 +9,7 @@
 1. Create a new script under Telecom Scripts>Software Installs.
 2. Name the script "App Prettyname" vX.X.X - (Install/Uninstall/Update).
 3. Add a download task under the <b>Then</b> section for the scripts. This should download to C:\Windows\LTSvc\packages. The download link is: https://raw.githubusercontent.com/bzerphey/AppScripts/main/Install.ps1 
-4. You must create a separate link for the install files unless the vendor allows pulling from them directly. This should pull from https://telecombusiness.ftphosting.net/.   <!-- This step needs to be rewritten since it is done in the script.>
+4. You must create a link for the install files unless the vendor allows pulling from them directly. This can pull from https://telecombusiness.ftphosting.net/ (with instructions below) or directly from the vendor source.  
    - You must first create a share link.
    - Next go to the share link and copy the download link of the file you need to download.
    - Use curl to download.
