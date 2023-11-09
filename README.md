@@ -53,12 +53,13 @@ Coming Soon....
   - [x] Add script cleanup logic **Needs tested**
   - [ ] Turn off logging for the Automate script or build 2 scripts.
   - [x] Add follow-up task param and logic. Script will be unique. **Needs tested**
+  - [ ] Create exit function to include cleanup.
 - [ ] Build uninstall script.
   - [ ] Build folder creation logic.
   - [ ] Build function to search registry for uninstall string.
   - [ ] Build function to accept uninstall string from param.
   - [ ] Add script cleanup logic.
 - [ ] Build update script.
-- [ ] Finish instructions for creating Intune App.
+- [ ] Finish instructions for creating Intune App. Maybe a separate script to call install.ps1?
 - [ ] Finish instructions for creating Automate App.
 - [ ] Plan version 2 with modules.
