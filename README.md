@@ -47,7 +47,7 @@ Coming Soon....
   - [x] C:\TBSI_Repo folder check logic.
   - [x] Create download logic for install files.
   - [x] Create Log file. 
-  - [ ] Add PreRun function.
+  - [x] Add preflight. **Needs tested**
   - [ ] Fix if logic for MSI
   - [x] Point Automate to pull script from GitHub
   - [x] ~~Add a return for Automate logging.~~ Built in logger that creates logs file on computer.

@@ -15,6 +15,8 @@ param (
     [Parameter(Mandatory=$false)]
     [string[]]$switch, #switch array
     [Parameter(Mandatory=$false)]
+    [string[]]$PreFlight, #PreInstall tasks script
+    [Parameter(Mandatory=$false)]
     [bool]$log = $false, #Logging 
     [Parameter(Mandatory=$false)]
     [bool]$fuTask = $false #Follow-up task script 
@@ -52,6 +54,16 @@ Logger -level INFO -message "Setting directory location..." -log $log
 
 #Directory check/creation
 Set-Location -Path "C:\TBSI_Repo"
+
+# Preflight tasks
+Logger -level INFO -message "Checking for preflight tasks..." -log $log
+
+if ($PreFlight -ne $null){
+    Logger -level INFO -message "Preflight file found. Running task..." -log $log
+    Start-Process "$($PreFlight) -name $($name) -log $log" -Wait
+}else{
+    Logger -level INFO -message "Preflight not found. Continuing script..." -log $log
+}
 
 #Download files
 Logger -level INFO -message "Downloading install files..." -log $log
