@@ -5,8 +5,6 @@
 
 ## Install Instructions
 
-> [!NOTE]
-> Not current. See Brian.
 #### Automate
 1. Create a new script under Telecom Scripts>Software Installs.
 2. Name the script "App Prettyname" vX.X.X - (Install/Uninstall/Update).
