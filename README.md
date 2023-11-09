@@ -3,12 +3,15 @@
 ## Description
 <p> These scripts have been created to automate the app install for Telecom and her MSP customers.</p>
 
-## Instructions
+## Install Instructions
 
+> [!NOTE]
+> Not current. See Brian.
 #### Automate
 1. Create a new script under Telecom Scripts>Software Installs.
 2. Name the script "App Prettyname" vX.X.X - (Install/Uninstall/Update).
 3. Add a download task under the <b>Then</b> section for the scripts. The download link is: https://raw.githubusercontent.com/bzerphey/AppScripts/main/Install.ps1 
+   <!-- This step needs to be rewritten since it is done in the script.>
 4. You must create a separate link for the install files unless the vendor allows pulling from them directly. This should pull from https://telecombusiness.ftphosting.net/.
    - You must first create a share link.
    - Next go to the share link and copy the download link of the file you need to download.
@@ -17,11 +20,11 @@
 ```
 powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
 ```
-6. On line 3, add a Resend Software task.
-7. On line 4, add IF SOFTWARE INSTALLED THEN Jump to line 6.
-8. On line 5, add Script Exit with Error.
-9. On line 6, add an exit script.
-10. If script ends in error, go to C:\TBSI_Repo\Install_'Program'.log via the file explorer tool in Automate to find the error.
+1. On line 3, add a Resend Software task.
+2. On line 4, add IF SOFTWARE INSTALLED THEN Jump to line 6.
+3. On line 5, add Script Exit with Error.
+4. On line 6, add an exit script.
+5.  If script ends in error, go to C:\TBSI_Repo\Install_'Program'.log via the file explorer tool in Automate to find the error.
 
 #### Intune
 1. Create folder with scripts and install file.
