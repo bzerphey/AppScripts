@@ -1,6 +1,6 @@
 ########################################
 ###Info###
-#Function: Default install script for Telecom Apps.
+#Function: Default install script for Telecom MSP/Managed Apps.
 #Author: Brian Zerphey
 ########################################
 param (

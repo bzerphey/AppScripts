@@ -1,6 +1,6 @@
 ########################################
 ###Info###
-#Function: Default uninistall script for Telecom Apps.
+#Function: Default uninistall script for Telecom MSP/Managed Apps.
 #Author: Brian Zerphey
 ########################################
 param (
@@ -111,7 +111,7 @@ if ($uString -contains "MsiExec.exe /I"){
     Start-Process $switch -Wait
 }
 
-#Installed Check
+#Final Check
 try {
     $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
 
@@ -119,6 +119,7 @@ try {
             Logger -level ERROR -message "The uninstall did not complete. Program still shows installed." -log $log
             exit
     }
+    Logger -level INFO -message "Uninstall complete. Ending script..." -log $log
 }
 catch {
     Logger -level ERROR -message "An error occured at post check: $_" -log $log
