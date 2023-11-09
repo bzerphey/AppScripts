@@ -43,6 +43,7 @@ function Logger {
 Logger -level INFO -message "Starting script..." -log $log
 
 Logger -level INFO -message "Setting directory location..." -log $log
+
 #Directory check/creation
 Set-Location -Path "C:\TBSI_Repo"
 
@@ -70,6 +71,7 @@ If (!(Test-Path -Path $installer)){
 Logger -level INFO -message "File found..." -log $log
 
 Logger -level INFO -message "Checking for previous installations..." -log $log
+
 #Installed Check
 try {
     $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
@@ -84,6 +86,7 @@ catch {
 }
 
 Logger -level INFO -message "No installations found. Starting install..." -log $log
+
 #Run
 if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::GetExtension($file) -eq ".EXE")) {
     Logger -level INFO -message "Install file is an EXE. Starting EXE logic..." -log $log
@@ -104,7 +107,9 @@ if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::Ge
     }
     
 }else{#if (([System.IO.Path]::GetExtension($installfile) -eq ".msi") -or ([System.IO.Path]::GetExtension($installfile) -eq ".MSI")) {
+    
     Logger -level INFO -message "Install file is an MSI. Starting MSI logic..." -log $log
+
     if ($switch -ne $null){
         $executeargs = @(
         "/i"

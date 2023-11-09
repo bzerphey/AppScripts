@@ -5,7 +5,7 @@
 
 ## Instructions
 
-### Automate
+#### Automate
 1. Create a new script under Telecom Scripts>Software Installs.
 2. Name the script "App Prettyname" vX.X.X - (Install/Uninstall/Update).
 3. Add a download task under the <b>Then</b> section for the scripts. The download link is: https://raw.githubusercontent.com/bzerphey/AppScripts/main/Install.ps1 
@@ -23,7 +23,7 @@ powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -na
 9. On line 6, add an exit script.
 10. If script ends in error, go to C:\TBSI_Repo\Install_'Program'.log via the file explorer tool in Automate to find the error.
 
-### Intune
+#### Intune
 1. Create folder with scripts and install file.
 2. Run packaging command:
 ```
@@ -40,6 +40,7 @@ Coming Soon....
 ```
 6. Instructions for detection rules. Coming Soon....
 
+[Tested Apps](TestedApps.md)
 
 ## Tasks
 - [ ] Build install script.
@@ -48,7 +49,7 @@ Coming Soon....
   - [x] Create Log file. 
   - [ ] Fix if logic for MSI
   - [x] Point Automate to pull script from GitHub
-  - [ ] Add a return for Automate logging.
+  - [x] ~~Add a return for Automate logging.~~ Built in logger that creates logs file on computer.
   - [ ] Add cleanup logic
 - [ ] Build uninstall script.
 - [ ] Build update script.

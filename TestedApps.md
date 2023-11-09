@@ -1,10 +1,10 @@
 # Tested App Versions
 
 ## ZAC
-File: '' <br>
-Name: '' <br>
-Version: '' <br>
-Installer Link:  ''
+File: 'ZAC_x64-8.4.33.exe' <br>
+Name: 'ZAC' <br>
+Version: '8.4.33' <br>
+Installer Link:  'https://mirror.zultys.biz/ZAC/ZAC_x64-8.4.33.exe'
 ### Tested
 - [ ] Automate Script
 - [ ] Intune App
