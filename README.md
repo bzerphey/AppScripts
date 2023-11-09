@@ -16,7 +16,7 @@
    - Use curl to download.
 5. Add a Shell function using the following syntact: 
 ```
-powershell.exe -executionpolicy bypass .\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
+powershell.exe -executionpolicy bypass C:\Windows\LTsvc\packages\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
 ```
 1. On line 3, add a Resend Software task.
 2. On line 4, add IF SOFTWARE INSTALLED THEN Jump to line 6.
