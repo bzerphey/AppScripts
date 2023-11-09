@@ -50,8 +50,13 @@ Coming Soon....
   - [ ] Fix if logic for MSI
   - [x] Point Automate to pull script from GitHub
   - [x] ~~Add a return for Automate logging.~~ Built in logger that creates logs file on computer.
-  - [ ] Add cleanup logic
+  - [ ] Add script cleanup logic
+  - [ ] Turn off logging for the Automate script or build 2 scripts.
 - [ ] Build uninstall script.
+  - [ ] Build folder creation logic.
+  - [ ] Build function to search registry for uninstall string.
+  - [ ] Build function to accept uninstall string from param.
+  - [ ] Add script cleanup logic.
 - [ ] Build update script.
 - [ ] Finish instructions for creating Intune App.
 - [ ] Finish instructions for creating Automate App.
