@@ -159,7 +159,7 @@ Logger -level INFO -message "Checking for follow-up task..." -log $log
 
 if($fuTask -eq $true){
     Logger -level INFO -message "Follow-up task found. Running script..." -log $log
-    Start-Process ".\$($fuTask) -logfile $LogFile -log $log" -Wait
+    Start-Process ".\$($fuTask) -log $log" -Wait
 }else{
     Logger -level INFO -message "No follow-up task found" -log $log
 }
