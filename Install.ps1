@@ -41,7 +41,7 @@ function Logger {
 ###
 
 If(!(Test-Path -Path "C:\TBSI_Repo")){
-    New-Item -ItemType Directory -Path "C:\TBSI_Repo"
+    New-Item -ItemType Directory -Force -Path "C:\TBSI_Repo"
 }
 
 Logger -level INFO -message "Starting script..." -log $log
