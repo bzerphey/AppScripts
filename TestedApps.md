@@ -75,6 +75,37 @@ Follow-up Script: <form action="">
 - [ ] Automate Script
 - [ ] Intune App
 
+## MXAdmin
+File: '' <br>
+Name: '' <br>
+Version: '' <br>
+Switches: '' <br>
+Installer Link:  ''<br>
+Follow-up Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form>
+  
+### Tested
+- [ ] Automate Script
+- [ ] Intune App
+
+## WaveVMS Client
+File: '' <br>
+Name: '' <br>
+Version: '' <br>
+Switches: '' <br>
+Installer Link:  ''<br>
+Follow-up Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form>
+  
+### Tested
+- [ ] Automate Script
+- [ ] Intune App
+
+
 <!--
 ## Template
 File: '' <br>
