@@ -40,20 +40,6 @@ function Logger {
     }
 }
 
-function readJOSN {
-    param (
-        $id
-    )
-    
-    $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/apprdapps.json" 
-
-    $reponse = Invoke-WebRequest -Uri $url
-    foreach ($item in $response){
-        if ($item.id -eq $id){
-            return $item
-    }
-}
-
 ###
 #Real Work
 ###
