@@ -42,7 +42,7 @@ function Logger {
     }
 }
 
-function readJOSN {
+function readJSON {
     param (
         $id
     )
@@ -51,9 +51,10 @@ function readJOSN {
 
     $reponse = Invoke-WebRequest -Uri $url
     $response = $reponse.Content | ConvertFrom-Json
-
+ 
     foreach ($item in $response){
-        if ($item.id -eq $id){
+        Write-Host $item
+        if ($item -eq $id){
             return $item
         }
     }
