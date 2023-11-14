@@ -50,6 +50,7 @@ function readJSON {
     $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/apprdapps.json" 
 
     $response = Invoke-RestMethod -Uri $url
+    $response | Get-Member
     foreach ($item in $response){
         write-host $item
         if ($item.id -eq $id){
