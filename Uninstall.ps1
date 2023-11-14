@@ -87,6 +87,8 @@ try {
     If ($arrProgram -eq $null){
             Logger -level ERROR -message "$($name) is not found install on the system. Please see administrator." -log $log
             exit
+    }elseif ($arrProgram.version -gt $version) {
+        Logger -level ERROR -message "A newer version of $($name) is installed than what you are trying to uninstall. Plesae confirm you want to uninstall this version and run the proper uninstaller." -log $log
     }
 }
 catch {

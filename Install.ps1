@@ -4,7 +4,9 @@
 #Author: Brian Zerphey
 ########################################
 param (
-    [Parameter(Position=0,mandatory=$true)]
+    [Parameter(Position=0,Mandatory=$true)]
+    $id
+<#     [Parameter(Position=0,mandatory=$true)]
     $file, #installer
     [Parameter(Position=1,mandatory=$true)]
     $name, #software name as it would appear in automate
@@ -19,7 +21,7 @@ param (
     [Parameter(Mandatory=$false)]
     [bool]$log = $false, #Logging 
     [Parameter(Mandatory=$false)]
-    [bool]$fuTask = $false #Follow-up task script 
+    [bool]$fuTask = $false #Follow-up task script  #>
 )
 
 ###
@@ -37,6 +39,20 @@ function Logger {
     If ($log -eq $true){
         $Timestamp = (Get-Date).toString("yyyy/MM/dd HH:mm:ss")
         Add-Content -Path $LogFile -Value "$timestamp [$level] - $message"
+    }
+}
+
+function readJOSN {
+    param (
+        $id
+    )
+    
+    $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/apprdapps.json" 
+
+    $reponse = Invoke-WebRequest -Uri $url
+    foreach ($item in $response){
+        if ($item.id -eq $id){
+            return $item
     }
 }
 
