@@ -6,6 +6,10 @@ Name: 'ZAC' <br>
 Version: '8.4.33' <br>
 Switches: '' <br>
 Installer Link:  'https://mirror.zultys.biz/ZAC/ZAC_x64-8.4.33.exe' <br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -21,6 +25,10 @@ Name: 'Zultys Fax 2.2 Printer' <br>
 Version: '2.2' <br>
 Switches: '' <br>
 Installer Link:  'https://file.ac/api/3/link/c_87Msu--4M/Zultys_Fax_2.2_x64.msi?download=true'<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -36,6 +44,10 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -51,6 +63,10 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -66,6 +82,10 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -81,6 +101,10 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -96,6 +120,10 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -113,6 +141,10 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
