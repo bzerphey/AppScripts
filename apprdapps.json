@@ -1,5 +1,5 @@
 {
-    {}
+    {
         "id" : "001"
         "name" : "ZAC",
         "version" : "8.4.33",
@@ -9,7 +9,7 @@
         "preflight" : "",
         "fuscript" : ""
     },
-    {}
+    {
         "id" : "002"
         "name" : "Zultys Fax 2.2 Printer",
         "version" : "2.2",

@@ -50,6 +50,7 @@ function readJSON {
     $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/apprdapps.json" 
 
     $reponse = Invoke-WebRequest -Uri $url -UseBasicParsing
+    Write-Host $response.Content
     $response = $reponse.Content | ConvertFrom-Json
     Write-Host $response
     foreach ($item in $response){
