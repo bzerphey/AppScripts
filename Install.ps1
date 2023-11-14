@@ -50,11 +50,25 @@ function readJOSN {
     $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/apprdapps.json" 
 
     $reponse = Invoke-WebRequest -Uri $url
+    $response = $reponse.Content | ConvertFrom-Json
+
     foreach ($item in $response){
         if ($item.id -eq $id){
             return $item
+        }
     }
 }
+
+$appdata = readJSON -id $id
+
+$file = $appdata.file
+$name = $appdata.name
+$version = $appdata.version
+$fileDL = $appdata.link
+$switch = $appdata.switches
+$PreFlight = $appdata.preflight
+$log = $true
+$fuTask = $appdata.fuscript
 
 ###
 #Real Work
