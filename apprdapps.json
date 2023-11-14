@@ -1,6 +1,6 @@
 {
     {
-        "id" : "001"
+        "id" : "001",
         "name" : "ZAC",
         "version" : "8.4.33",
         "file" : "ZAC_x64-8.4.33.exe",
@@ -10,7 +10,7 @@
         "fuscript" : ""
     },
     {
-        "id" : "002"
+        "id" : "002",
         "name" : "Zultys Fax 2.2 Printer",
         "version" : "2.2",
         "file" : "Zultys_Fax_2.2_x64.msi",
