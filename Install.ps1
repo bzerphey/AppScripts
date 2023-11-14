@@ -191,7 +191,8 @@ if (Test-Path -Path "C:\Windows\LTSvc\packages\Install.ps1"){
 
 Logger -level INFO -message "Removing install file..." -log $log
 try {
-    Remove-Item -Path 'C:\TBSI_Repo\$($file)' -Force        
+    $inFileP = "C:\TBSI_Repo\" + $file
+    Remove-Item -Path $inFileP -Force        
 }
 catch {
     Logger -level ERROR -message "Could not remove install file." -log $log

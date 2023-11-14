@@ -39,11 +39,11 @@ Follow-up Script: <form action="">
 - [ ] Intune App
 
 ## Chrome
-File: '' <br>
-Name: '' <br>
-Version: '' <br>
-Switches: '' <br>
-Installer Link:  ''<br>
+File: 'googlechromestandaloneenterprise64.msi' <br>
+Name: 'Google Chrome' <br>
+Version: '119.0.6045.124' <br>
+Switches: '/qn' <br>
+Installer Link:  'https://file.ac/api/3/link/F8hUgAcmD8o/googlechromestandaloneenterprise64.msi?download=true'<br>
 Preflight Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -54,15 +54,15 @@ Follow-up Script: <form action="">
 </form>
   
 ### Tested
-- [ ] Automate Script
+- [x] Automate Script
 - [ ] Intune App
 
 ## Skype
-File: '' <br>
-Name: '' <br>
-Version: '' <br>
+File: 'Skype-8.108.0.205.exe' <br>
+Name: 'Skype version 8.108' <br>
+Version: '8.108.0.205' <br>
 Switches: '' <br>
-Installer Link:  ''<br>
+Installer Link:  'https://file.ac/api/3/link/yg_C4TSCj8o/Skype-8.108.0.205.exe?download=true'<br>
 Preflight Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -73,7 +73,7 @@ Follow-up Script: <form action="">
 </form>
   
 ### Tested
-- [ ] Automate Script
+- [x] Automate Script
 - [ ] Intune App
 
 ## Teams Classic
