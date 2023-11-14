@@ -56,13 +56,13 @@ Coming Soon....
   - [x] Add follow-up task param and logic. Script will be unique. **Needs tested**
   - [ ] Create exit function to include cleanup.
   - [ ] Create a JSON table to import approved programs to cut down on needed params.
-  - [ ] Build upgrade switch and logic.
 - [ ] Build uninstall script.
   - [x] Build folder creation logic.
   - [x] Build function to search registry for uninstall string. **Needs tested**
   - [x] Build function to accept uninstall string from param. **Needs tested**
   - [ ] Add version checking to RegSearch.
   - [ ] Add script cleanup logic.
+- [ ] Build update script.
 - [ ] Finish instructions for creating Intune App. Maybe a separate script to call install.ps1?
 - [ ] Finish instructions for creating Automate App.
 - [ ] Plan version 2 with modules.

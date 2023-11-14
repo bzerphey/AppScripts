@@ -4,9 +4,7 @@
 #Author: Brian Zerphey
 ########################################
 param (
-    [Parameter(Position=0,Mandatory=$true)]
-    $id
-<#     [Parameter(Position=0,mandatory=$true)]
+    [Parameter(Position=0,mandatory=$true)]
     $file, #installer
     [Parameter(Position=1,mandatory=$true)]
     $name, #software name as it would appear in automate
@@ -21,7 +19,7 @@ param (
     [Parameter(Mandatory=$false)]
     [bool]$log = $false, #Logging 
     [Parameter(Mandatory=$false)]
-    [bool]$fuTask = $false #Follow-up task script  #>
+    [bool]$fuTask = $false #Follow-up task script 
 )
 
 ###
@@ -42,34 +40,19 @@ function Logger {
     }
 }
 
-function readJSON {
+function readJOSN {
     param (
         $id
     )
     
     $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/apprdapps.json" 
 
-    $response = Invoke-RestMethod -Uri $url
-    $response | Get-Member
+    $reponse = Invoke-WebRequest -Uri $url
     foreach ($item in $response){
-        write-host $item
         if ($item.id -eq $id){
-
             return $item
-        }
     }
 }
-
-$appdata = readJSON -id $id
-
-$file = $appdata.file
-$name = $appdata.name
-$version = $appdata.version
-$fileDL = $appdata.link
-$switch = $appdata.switches
-$PreFlight = $appdata.preflight
-$log = $true
-$fuTask = $appdata.fuscript
 
 ###
 #Real Work
