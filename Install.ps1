@@ -5,9 +5,21 @@
 ########################################
 param (
     [Parameter(Position=0,mandatory=$true)]
-    $id, #json id
+    $file, #installer
+    [Parameter(Position=1,mandatory=$true)]
+    $name, #software name as it would appear in automate
+    [Parameter(Position=2,mandatory=$true)]
+    $version, #software version installing
+    [Parameter(Position=3,mandatory=$true)]
+    $fileDL, #download link for installer
     [Parameter(Mandatory=$false)]
-    [bool]$log = $false #Logging 
+    [string[]]$switch, #switch array
+    [Parameter(Mandatory=$false)]
+    [string[]]$PreFlight, #PreInstall tasks script
+    [Parameter(Mandatory=$false)]
+    [bool]$log = $false, #Logging 
+    [Parameter(Mandatory=$false)]
+    $fuTask #Follow-up task script 
 )
 
 ###
@@ -28,23 +40,6 @@ function Logger {
     }
 }
 
-function jsonRead {
-    param (
-        [Parameter(Position=0,mandatory=$true)]
-        $id
-    )
-    
-    $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/software.json"
-
-    $jsons = Invoke-RestMethod -Uri $url -UseBasicParsing -ContentType "application/json"
-
-    $jsons | ForEach-Object {
-        if ($_.id -eq $id) {
-            return $_
-        }
-    }
-}
-
 ###
 #Real Work
 ###
@@ -53,34 +48,17 @@ If(!(Test-Path -Path "C:\TBSI_Repo")){
     New-Item -ItemType Directory -Force -Path "C:\TBSI_Repo"
 }
 
-#Logger -level INFO -message "Starting script..." -log $log
+Logger -level INFO -message "Starting script..." -log $log
 
-#Logger -level INFO -message "Setting directory location..." -log $log
+Logger -level INFO -message "Setting directory location..." -log $log
 
 #Directory check/creation
 Set-Location -Path "C:\TBSI_Repo"
 
-#Pull variables from json
-#Logger -level INFO -message "Gathering variables..." -log $log
-$var = jsonRead -id $id
-
-if ($var -ne $null){
-    $file = $var.file #installer
-    $name = $var.name #software name as it would appear in automate
-    $version = $var.version #software version installing
-    $fileDL = $var.installLink #download link for installer
-    $switch = $var.switches #switch array
-    $PreFlight = $var.preflight #PreInstall tasks script
-    $fuTask = $var.fuscript #Follow-up task script
-}else{
-    Logger -level ERROR -message "The variable request returned no data. Please check the ID and try again. If you continue to recieve this error, see your System Administrator.: $_" -log $log
-    Exit
-}
-
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
-if ($PreFlight -ne ""){
+if ($PreFlight -ne $null){
     Logger -level INFO -message "Preflight file found. Running task..." -log $log
     Start-Process "$($PreFlight) -name $($name) -log $log" -Wait
 }else{
@@ -130,7 +108,7 @@ Logger -level INFO -message "No installations found. Starting install..." -log $
 #Run
 if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::GetExtension($file) -eq ".EXE")) {
     Logger -level INFO -message "Install file is an EXE. Starting EXE logic..." -log $log
-    if ($switch -ne ""){
+    if ($switch -ne $null){
         $executeargs = $switch
     }Else{
         $executeargs = @(
@@ -150,7 +128,7 @@ if (([System.IO.Path]::GetExtension($file) -eq ".exe") -or ([System.IO.Path]::Ge
     
     Logger -level INFO -message "Install file is an MSI. Starting MSI logic..." -log $log
 
-    if ($switch -ne ""){
+    if ($switch -ne $null){
         $executeargs = @(
         "/i"
         "$($file)"
@@ -191,7 +169,7 @@ catch {
 #Follow-up task
 Logger -level INFO -message "Checking for follow-up task..." -log $log
 
-if($fuTask -ne ""){
+if($fuTask -ne $null){
     Logger -level INFO -message "Follow-up task found. Running script..." -log $log
     Start-Process ".\$($fuTask) -log $log" -Wait
 }else{
@@ -213,11 +191,10 @@ if (Test-Path -Path "C:\Windows\LTSvc\packages\Install.ps1"){
 
 Logger -level INFO -message "Removing install file..." -log $log
 try {
-    $inFileP = "C:\TBSI_Repo\" + $file
-    Remove-Item -Path $inFileP -Force        
+    Remove-Item -Path 'C:\TBSI_Repo\$($file)' -Force        
 }
 catch {
     Logger -level ERROR -message "Could not remove install file." -log $log
 }
 
-#The End#>
+#The End
