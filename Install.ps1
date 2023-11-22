@@ -53,15 +53,15 @@ If(!(Test-Path -Path "C:\TBSI_Repo")){
     New-Item -ItemType Directory -Force -Path "C:\TBSI_Repo"
 }
 
-Logger -level INFO -message "Starting script..." -log $log
+#Logger -level INFO -message "Starting script..." -log $log
 
-Logger -level INFO -message "Setting directory location..." -log $log
+#Logger -level INFO -message "Setting directory location..." -log $log
 
 #Directory check/creation
 Set-Location -Path "C:\TBSI_Repo"
 
 #Pull variables from json
-Logger -level INFO -message "Gathering variables..." -log $log
+#Logger -level INFO -message "Gathering variables..." -log $log
 $var = jsonRead -id $id
 
 if ($var -ne $null){
@@ -73,10 +73,9 @@ if ($var -ne $null){
     $PreFlight = $var.preflight #PreInstall tasks script
     $fuTask = $var.fuscript #Follow-up task script
 }else{
-    Logger -level ERROR -message "The variable request returned no data. Plesae check the ID and try again. If you continue to recieve this error, see your System Administrator.: $_" -log $log
+    Logger -level ERROR -message "The variable request returned no data. Please check the ID and try again. If you continue to recieve this error, see your System Administrator.: $_" -log $log
     Exit
 }
-write-host $preflight
 
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log

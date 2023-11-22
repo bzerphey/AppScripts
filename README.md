@@ -55,7 +55,7 @@ Coming Soon....
   - [ ] Turn off logging for the Automate script or build 2 scripts.
   - [x] Add follow-up task param and logic. Script will be unique. **Needs tested**
   - [ ] Create exit function to include cleanup.
-  - [ ] Create a JSON table to import approved programs to cut down on needed params.
+  - [X] Create a JSON table to import approved programs to cut down on needed params.
 - [ ] Build uninstall script.
   - [x] Build folder creation logic.
   - [x] Build function to search registry for uninstall string. **Needs tested**
