@@ -13,7 +13,7 @@
    - You must first create a share link.
    - Next go to the share link and copy the download link of the file you need to download.
    - Use curl to download.
-5. Add a Shell function using the following syntact: 
+5. Add a Shell function using the following syntact:  **USE SINGLE QUOTES**
 ```
 powershell.exe -executionpolicy bypass C:\Windows\LTsvc\packages\Install.ps1 -file 'InstallFileName' -name 'AppName' -version 'AppVersion' -fileDL 'LinktoDownload' -switch 'AlternativeSwitches:Optional'
 ```
@@ -51,7 +51,7 @@ Coming Soon....
   - [ ] Fix if logic for MSI
   - [x] Point Automate to pull script from GitHub
   - [x] ~~Add a return for Automate logging.~~ Built in logger that creates logs file on computer.
-  - [x] Add script cleanup logic **Needs tested**
+  - [x] Add script cleanup logic **Needs tested - Does not work**
   - [ ] Turn off logging for the Automate script or build 2 scripts.
   - [x] Add follow-up task param and logic. Script will be unique. **Needs tested**
   - [ ] Create exit function to include cleanup.
