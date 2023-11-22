@@ -60,7 +60,7 @@ Coming Soon....
   - [x] Build folder creation logic.
   - [x] Build function to search registry for uninstall string. **Needs tested**
   - [x] Build function to accept uninstall string from param. **Needs tested**
-  - [ ] Add version checking to RegSearch.
+  - [X] Add version checking to RegSearch.
   - [ ] Add script cleanup logic.
 - [ ] Build update script.
 - [ ] Finish instructions for creating Intune App. Maybe a separate script to call install.ps1?

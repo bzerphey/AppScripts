@@ -55,11 +55,19 @@ function RegSearch {
         Logger -level INFO -message "Manual uninstall string supplied. Returning string." -log $log
         Return $string
     }elseif($x86 -ne $null) {
-        Logger -level INFO -message "x86 string found. Returning string." -log $log
-        Return $x86
+        Logger -level INFO -message "x86 string found. Checking version..." -log $log
+        if ($x86.version -eq $version) {
+            Return $x86
+        }else{
+            Logger -level ERROR -message "Unexpected version found. Please see your administrator" -log $log
+        }
     }elseif ($x64 -ne $null) {
-        Logger -level INFO -message "x64 string found. Returning string." -log $log
-        Return $x64
+        Logger -level INFO -message "x64 string found. Checking version..." -log $log
+        if ($x64.version -eq $version) {
+            Return $x64
+        }else{
+            Logger -level ERROR -message "Unexpected version found. Please see your administrator" -log $log
+        }
     } else {
         Logger -level ERROR -message "No uninstall string found. Please see your administrator" -log $log
     }

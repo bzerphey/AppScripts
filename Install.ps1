@@ -19,7 +19,7 @@ param (
     [Parameter(Mandatory=$false)]
     [bool]$log = $false, #Logging 
     [Parameter(Mandatory=$false)]
-    [bool]$fuTask = $false #Follow-up task script 
+    $fuTask #Follow-up task script 
 )
 
 ###
@@ -169,7 +169,7 @@ catch {
 #Follow-up task
 Logger -level INFO -message "Checking for follow-up task..." -log $log
 
-if($fuTask -eq $true){
+if($fuTask -ne $null){
     Logger -level INFO -message "Follow-up task found. Running script..." -log $log
     Start-Process ".\$($fuTask) -log $log" -Wait
 }else{
