@@ -5,7 +5,7 @@
         "file":"ZAC_x64-8.4.33.exe",
         "name":"ZAC",
         "version":"8.4.33",
-        "switches":"",
+        "switches":"/S /qb",
         "installLink":"https://mirror.zultys.biz/ZAC/ZAC_x64-8.4.33.exe",
         "preflight":"",
         "fuscript":"",

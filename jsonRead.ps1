@@ -1,7 +1,7 @@
 function jsonRead {
     param (
         [Parameter(Position=0,mandatory=$true)]
-        $name, #software name as it would appear in automate
+        $swname, #software name as it would appear in automate
         [Parameter(Position=1,mandatory=$true)]
         $version #software version installing
     )
@@ -15,11 +15,11 @@ function jsonRead {
     foreach ($sw in $obj){
         if ($sw.swname -eq $name) {
             if ($sw.version -eq $version) {
-                return $sw
+                return $json
             }
         }
     }
 }
 
-$jsonID = jsonRead -name "Test 1" -version "1.1.1"
+$jsonID = jsonRead -swname "Test1" -version "1.1.1"
 Write-Host $jsonID.id
