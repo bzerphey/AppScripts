@@ -10,15 +10,16 @@ function jsonRead {
 
     $jsons = Invoke-RestMethod -Uri $url -UseBasicParsing -ContentType "application/json" | ConvertTo-Json
 
-    $jsons | ConvertFrom-Json | Get-Member -MemberType NoteProperty | ForEach-Object { 
-        Write-Host $_
-        if ($_.swname -eq $name) {
-            if ($_.version -eq $version) {
-                return $json
+    $obj = $jsons | ConvertFrom-Json
+
+    foreach ($sw in $obj){
+        if ($sw.swname -eq $name) {
+            if ($sw.version -eq $version) {
+                return $sw
             }
         }
     }
 }
 
-$jsonID = jsonRead -name "Test1" -version "1.1.1"
+$jsonID = jsonRead -name "Test 1" -version "1.1.1"
 Write-Host $jsonID.id
