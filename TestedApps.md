@@ -6,6 +6,14 @@ Name: 'ZAC' <br>
 Version: '8.4.33' <br>
 Switches: '' <br>
 Installer Link:  'https://mirror.zultys.biz/ZAC/ZAC_x64-8.4.33.exe' <br>
+<<<<<<< HEAD
+Uninstall String: '' <br>
+=======
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -22,6 +30,14 @@ Name: 'Zultys Fax 2.2 Printer' <br>
 Version: '2.2' <br>
 Switches: '' <br>
 Installer Link:  'https://file.ac/api/3/link/c_87Msu--4M/Zultys_Fax_2.2_x64.msi?download=true'<br>
+<<<<<<< HEAD
+Uninstall String: '' <br>
+=======
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -33,11 +49,24 @@ Follow-up Script: <form action="">
 - [ ] Uninstall Script
   
 ## Chrome
+<<<<<<< HEAD
 File: '' <br>
 Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+Uninstall String: '' <br>
+=======
+File: 'googlechromestandaloneenterprise64.msi' <br>
+Name: 'Google Chrome' <br>
+Version: '119.0.6045.124' <br>
+Switches: '/qn' <br>
+Installer Link:  'https://file.ac/api/3/link/F8hUgAcmD8o/googlechromestandaloneenterprise64.msi?download=true'<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -53,7 +82,16 @@ File: 'Skype-8.108.0.205.exe' <br>
 Name: 'Skype version 8.108' <br>
 Version: '8.108.0.205' <br>
 Switches: '' <br>
+<<<<<<< HEAD
 Installer Link:  ''<br>
+Uninstall String: '' <br>
+=======
+Installer Link:  'https://file.ac/api/3/link/yg_C4TSCj8o/Skype-8.108.0.205.exe?download=true'<br>
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -70,6 +108,14 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+<<<<<<< HEAD
+Uninstall String: '' <br>
+=======
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -86,6 +132,14 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+<<<<<<< HEAD
+Uninstall String: '' <br>
+=======
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -102,6 +156,14 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+<<<<<<< HEAD
+Uninstall String: '' <br>
+=======
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
@@ -119,6 +181,14 @@ Name: '' <br>
 Version: '' <br>
 Switches: '' <br>
 Installer Link:  ''<br>
+<<<<<<< HEAD
+Uninstall String: '' <br>
+=======
+Preflight Script: <form action="">
+  <input type="radio" name="rdo" id="yes" /> Yes
+  <input type="radio" name="rdo" id="no" checked /> No
+</form> <br>
+>>>>>>> d1218ed70e507ba2caace4de19f42ece105ca77a
 Follow-up Script: <form action="">
   <input type="radio" name="rdo" id="yes" /> Yes
   <input type="radio" name="rdo" id="no" checked /> No
