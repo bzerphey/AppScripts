@@ -13,8 +13,6 @@ param (
 ###
 #Functions
 ###
-$LogFile = "C:\TBSI_Repo\Install_$($name).log"
-
 function Logger {
     param(
         [Parameter(Mandatory = $true)][string] $message,
@@ -76,6 +74,8 @@ if ($var -ne $null){
     Logger -level ERROR -message "The variable request returned no data. Please check the ID and try again. If you continue to recieve this error, see your System Administrator.: $_" -log $log
     Exit
 }
+
+$LogFile = "C:\TBSI_Repo\Install_$($name).log"
 
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log
