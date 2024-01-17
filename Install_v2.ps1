@@ -11,6 +11,10 @@ param (
 )
 
 ###
+#PS7 Check
+###
+
+###
 #Functions
 ###
 function Logger {
@@ -75,7 +79,7 @@ if ($var -ne $null){
     Exit
 }
 
-$LogFile = "C:\TBSI_Repo\Install_$($name).log"
+$LogFile = "C:\TBSI_Repo\Install_$(Get-Date -Format o | foreach {$_ -replace ":", "."}).log"
 
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log
