@@ -11,10 +11,6 @@ param (
 )
 
 ###
-#PS7 Check
-###
-
-###
 #Functions
 ###
 function Logger {
@@ -121,8 +117,16 @@ try {
     $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
 
     If ($arrProgram -ne $null){
-            Logger -level ERROR -message "A version of $($name) is already installed. Please remove and run again." -log $log
+        if (arrProgram.version -lt $version){
+            Logger -level ERROR -message "A previous version of $($name) is already installed. Attempting install overtop." -log $log
+        }elseif (arrProgram.version -gt $version){
+            Logger -level ERROR -message "A newer version of $($name) is already installed. Please check installation." -log $log
             exit
+        }else {
+            Logger -level ERROR -message "$($name) is already installed." -log $log
+            exit
+        }
+
     }
 }
 catch {
