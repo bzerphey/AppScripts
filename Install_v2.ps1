@@ -82,7 +82,9 @@ Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
 if ($PreFlight -ne ""){
     Logger -level INFO -message "Preflight file found. Running task..." -log $log
-    Start-Process "$($PreFlight) -name $($name) -log $log" -Wait
+    $pfDL = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/" + $PreFlight
+    curl.exe $pfDL -o ".\PF.ps1"
+    Start-Process ".\PF.ps1 -name $($name) -log $log" -Wait
 }else{
     Logger -level INFO -message "Preflight not found. Continuing script..." -log $log
 }

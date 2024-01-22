@@ -67,7 +67,7 @@
         "version":"9.0.15",
         "switches":"",
         "installLink":"https://file.ac/api/3/link/zwcxr5SmRYo/ZAC_x64-9.0.15.exe?download=true",
-        "preflight":"",
+        "preflight":"PreFlights/ZAC_PF.ps1",
         "fuscript":"",
         "uninstallstring":""
     },
