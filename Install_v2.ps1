@@ -58,6 +58,8 @@ If(!(Test-Path -Path "C:\TBSI_Repo")){
 #Directory check/creation
 Set-Location -Path "C:\TBSI_Repo"
 
+$LogFile = "C:\TBSI_Repo\Install_$(Get-Date -Format o | foreach {$_ -replace ":", "."}).log"
+
 #Pull variables from json
 #Logger -level INFO -message "Gathering variables..." -log $log
 $var = jsonRead -id $id
@@ -75,8 +77,6 @@ if ($var -ne $null){
     Exit
 }
 
-$LogFile = "C:\TBSI_Repo\Install_$(Get-Date -Format o | foreach {$_ -replace ":", "."}).log"
-
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
@@ -84,7 +84,7 @@ if ($PreFlight -ne ""){
     Logger -level INFO -message "Preflight file found. Running task..." -log $log
     $pfDL = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/" + $PreFlight
     curl.exe $pfDL -o ".\PF.ps1"
-    Start-Process ".\PF.ps1 -name $($name) -log $log" -Wait
+    Start-Process "C:\TBSI_Repo\PF.ps1 -name $($name) -log $log" -Wait
 }else{
     Logger -level INFO -message "Preflight not found. Continuing script..." -log $log
 }
@@ -119,9 +119,9 @@ try {
     $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
 
     If ($arrProgram -ne $null){
-        if (arrProgram.version -lt $version){
+        if ($arrProgram.version -lt $version){
             Logger -level ERROR -message "A previous version of $($name) is already installed. Attempting install overtop." -log $log
-        }elseif (arrProgram.version -gt $version){
+        }elseif ($arrProgram.version -gt $version){
             Logger -level ERROR -message "A newer version of $($name) is already installed. Please check installation." -log $log
             exit
         }else {
@@ -224,7 +224,12 @@ if (Test-Path -Path "C:\Windows\LTSvc\packages\Install.ps1"){
 Logger -level INFO -message "Removing install file..." -log $log
 try {
     $inFileP = "C:\TBSI_Repo\" + $file
-    Remove-Item -Path $inFileP -Force        
+    Remove-Item -Path $inFileP -Force
+    if (Test-Path -Path ".\PF.ps1"){
+        Remove-Item -Path ".\PF.ps1"-Force         
+    }elseif (Test-Path -Path ".\FU.ps1"){
+        Remove-Item -Path ".\FU.ps1" -Force
+    }
 }
 catch {
     Logger -level ERROR -message "Could not remove install file." -log $log
