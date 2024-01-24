@@ -78,7 +78,7 @@
         "name":"Skype version 8.111",
         "version":"8.111.0.607",
         "switches":"/SILENT",
-        "installLink":"https://go.skype.com/windows.desktop.download/Skype-8.111.0.607.exe",
+        "installLink":"https://file.ac/api/3/link/yg_C4TSCj8o/Skype-8.111.0.607.exe?download=true",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
