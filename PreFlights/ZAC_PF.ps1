@@ -5,12 +5,10 @@
 #ZAC Crash Handler
 #>
 
-$procArr = Get-Process
+$procArr = @("zac",
+"ZultysCrashHandler",
+"OutlookSync") 
 
-foreach ($proc in $procArr) {
-    if (($proc.ProcessName -eq "zac") -or ($proc.ProcessName -eq "ZultysCrashHandler") -or ($proc.ProcessName -eq "OutlookSync")) {
-        Stop-Process -Id $proc.ID -PassThru
-    }else{
-        Write-Host "No process found."
-    }
+foreach ($process in $procArr){
+        Stop-Process -Name $process -PassThru
 }
