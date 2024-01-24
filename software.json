@@ -36,13 +36,13 @@
         "uninstallstring":""
     },
     {
-        "id":"004",
+        "id":"*Depricated*004",
         "vender":"Microsoft",
         "file":"Skype-8.108.0.205.exe",
         "name":"Skype version 8.108",
         "version":"8.108.0.205",
         "switches":"/SILENT",
-        "installLink":"https://file.ac/api/3/link/yg_C4TSCj8o/Skype-8.108.0.205.exe?download=true",
+        "installLink":"",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -81,6 +81,18 @@
         "installLink":"https://file.ac/ZJPJoLna1tU/Skype-8.111.0.607.exe?download=true",
         "preflight":"",
         "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"008",
+        "vender":"Wisenet",
+        "file":"wave-client-5.1.1.37512-windows_x64.exe",
+        "name":"Wisenet WAVE Client",
+        "version":"5.1.1.37512",
+        "switches":"",
+        "installLink":"https://file.ac/ylUfGr0yeCc/wave-client-5.1.1.37512-windows_x64.exe",
+        "preflight":"wave_PF.ps1",
+        "fuscript":"wave_FU.ps1",
         "uninstallstring":""
     }
 ]
