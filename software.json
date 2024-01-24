@@ -85,14 +85,14 @@
     },
     {
         "id":"008",
-        "vender":"Wisenet",
+        "vender":"Hanwa",
         "file":"wave-client-5.1.1.37512-windows_x64.exe",
         "name":"Wisenet WAVE Client",
         "version":"5.1.1.37512",
         "switches":"",
         "installLink":"https://file.ac/ylUfGr0yeCc/wave-client-5.1.1.37512-windows_x64.exe",
-        "preflight":"wave_PF.ps1",
-        "fuscript":"wave_FU.ps1",
+        "preflight":"PreFlights/wave_PF.ps1",
+        "fuscript":"FollowUps/wave_FU.ps1",
         "uninstallstring":""
     }
 ]
