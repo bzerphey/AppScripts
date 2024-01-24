@@ -73,12 +73,12 @@
     },
     {
         "id":"007",
-        "vender":"",
-        "file":"",
-        "name":"",
-        "version":"",
-        "switches":"",
-        "installLink":"",
+        "vender":"Microsoft",
+        "file":"Skype-8.111.0.607.exe",
+        "name":"Skype version 8.111",
+        "version":"8.111.0.607",
+        "switches":"/SILENT",
+        "installLink":"https://go.skype.com/windows.desktop.download",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
