@@ -77,7 +77,7 @@
         "file":"Skype-8.111.0.607.exe",
         "name":"Skype version 8.111",
         "version":"8.111.0.607",
-        "switches":"/SILENT",
+        "switches":"/VERYSILENT /CLOSEAPPLICATIONS /NORESTART",
         "installLink":"https://file.ac/api/3/link/yg_C4TSCj8o/Skype-8.111.0.607.exe?download=true",
         "preflight":"",
         "fuscript":"",
