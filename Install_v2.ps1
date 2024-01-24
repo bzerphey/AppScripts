@@ -77,6 +77,7 @@ if ($var -ne $null){
     Exit
 }
 
+Logger -level INFO -message "Starting checks for &($name)" -log $log
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
@@ -203,7 +204,9 @@ Logger -level INFO -message "Checking for follow-up task..." -log $log
 
 if($fuTask -ne ""){
     Logger -level INFO -message "Follow-up task found. Running script..." -log $log
-    Start-Process ".\$($fuTask) -log $log" -Wait
+    $pfDL = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/" + $fuTask
+    curl.exe $pfDL -o ".\FU.ps1"
+    Start-Process "C:\TBSI_Repo\FU.ps1 -name $($name) -log $log" -Wait
 }else{
     Logger -level INFO -message "No follow-up task found" -log $log
 }
