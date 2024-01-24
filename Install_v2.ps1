@@ -7,7 +7,7 @@ param (
     [Parameter(Position=0,mandatory=$true)]
     $id, #json id
     [Parameter(Mandatory=$false)]
-    [bool]$log = $false #Logging 
+    [bool]$log = $True #Logging 
 )
 
 ###
