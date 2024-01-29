@@ -11,6 +11,11 @@ param (
 )
 
 ###
+#Global Variables
+###
+$root = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/"
+
+###
 #Functions
 ###
 function Logger {
@@ -32,7 +37,7 @@ function jsonRead {
         $id
     )
     
-    $url = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/software.json"
+    $url = $root + "software.json"
 
     $jsons = Invoke-RestMethod -Uri $url -UseBasicParsing -ContentType "application/json"
 
@@ -83,7 +88,7 @@ Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
 if ($PreFlight -ne ""){
     Logger -level INFO -message "Preflight file found. Running task..." -log $log
-    $pfDL = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/" + $PreFlight
+    $pfDL = $root + $PreFlight
     curl.exe $pfDL -o ".\PF.ps1"
     Start-Process "C:\TBSI_Repo\PF.ps1 -name $($name) -log $log" -Wait
 }else{
@@ -204,7 +209,7 @@ Logger -level INFO -message "Checking for follow-up task..." -log $log
 
 if($fuTask -ne ""){
     Logger -level INFO -message "Follow-up task found. Running script..." -log $log
-    $pfDL = "https://raw.githubusercontent.com/bzerphey/AppScripts/main/" + $fuTask
+    $pfDL = $root + $fuTask
     curl.exe $pfDL -o ".\FU.ps1"
     Start-Process "C:\TBSI_Repo\FU.ps1 -name $($name) -log $log" -Wait
 }else{
