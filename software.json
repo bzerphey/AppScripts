@@ -149,7 +149,7 @@
         "file":"VSCodeSetup-x64-1.85.2.exe",
         "name":"Microsoft Visual Studio Code",
         "version":"1.85.2",
-        "switches":"/VERYSILENT",
+        "switches":"/VERYSILENT /MERGETASKS=!runcode",
         "installLink":"https://file.ac/Wvj80ImVhiY/VSCodeSetup-x64-1.85.2.exe",
         "preflight":"",
         "fuscript":"",
