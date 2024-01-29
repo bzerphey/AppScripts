@@ -77,7 +77,7 @@ if ($var -ne $null){
     Exit
 }
 
-Logger -level INFO -message "Starting checks for &($name)" -log $log
+Logger -level INFO -message "Starting checks for $($name)" -log $log
 # Preflight tasks
 Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
