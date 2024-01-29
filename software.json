@@ -142,5 +142,29 @@
         "preflight":"",
         "fuscript":"FollowUps/mxadminMV_FU.ps1",
         "uninstallstring":""
+    },
+    {
+        "id":"013",
+        "vender":"Microsoft",
+        "file":"VSCodeSetup-x64-1.85.2.exe",
+        "name":"Microsoft Visual Studio Code",
+        "version":"1.85.2",
+        "switches":"/VERYSILENT",
+        "installLink":"https://file.ac/Wvj80ImVhiY/VSCodeSetup-x64-1.85.2.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"014",
+        "vender":"Git",
+        "file":"Git-2.43.0-64-bit.exe",
+        "name":"Git",
+        "version":"2.43.0",
+        "switches":"/VERYSILENT",
+        "installLink":"https://file.ac/dFjsAfJWvPU/Git-2.43.0-64-bit.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
