@@ -77,6 +77,7 @@ if ($var -ne $null){
     $switch = $var.switches #switch array
     $PreFlight = $var.preflight #PreInstall tasks script
     $fuTask = $var.fuscript #Follow-up task script
+    $uninstall = $var.UninstallString #Uninstall tasks script
 }else{
     Logger -level ERROR -message "The variable request returned no data. Please check the ID and try again. If you continue to recieve this error, see your System Administrator.: $_" -log $log
     Exit
@@ -101,9 +102,35 @@ try {
             Logger -level INFO -message "$($name) has been found. Running uninstall." -log $log
         }
 
+    }else{
+        Logger -level INFO -message "$($name) install not found. Exiting script." -log $log
+        exit
     }
 }
 catch {
-    Logger -level ERROR -message "Program not found." -log $log
-    Logger -level ERROR -message "An error occured at prerun: $_" -log $log
+    Logger -level ERROR -message "An error occured at installed check: $_" -log $log
+    exit
 }
+
+#Uninstall
+if ($uninstall -ne $null){
+    Start-Process $uninstall -Wait
+}Else{
+    $regString = Get-ChildItem -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall", "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall" | Get-ItemProperty | Where-Object {$_.DisplayName -match $name } | Select-Object -Property UninstallString
+    Start-Process $regString -Wait
+}
+
+#Installed Check
+try {
+    $arrProgram = Get-WmiObject -Class Win32_Product | where name -eq $name 
+
+    If ($arrProgram -ne $null){
+        Logger -level INFO -message "$($name) has not been uninstalled correctly. Please see a System Administrator." -log $log
+    }
+}
+catch {
+    Logger -level ERROR -message "An error occured at installed check: $_" -log $log
+    exit
+}
+
+#End
