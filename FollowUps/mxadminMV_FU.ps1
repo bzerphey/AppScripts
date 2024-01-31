@@ -9,5 +9,5 @@ $arrFolders = @("MXAdmin16.04",
 
 foreach ($folder in $arrFolders) {
     $dl = $src + $folder
-    curl.exe $dl -o "'C:\Program Files (x86)\Zultys\'$($folder)"
+    curl.exe $dl -o "C:\Program Files (x86)\Zultys\$($folder)\"
 }
