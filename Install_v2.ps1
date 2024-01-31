@@ -211,7 +211,7 @@ if($fuTask -ne ""){
     Logger -level INFO -message "Follow-up task found. Running script..." -log $log
     $pfDL = $root + $fuTask
     curl.exe $pfDL -o ".\FU.ps1"
-    Start-Process "C:\TBSI_Repo\FU.ps1 -name $($name) -log $log" -Wait -Verb runAs
+    Start-Process "C:\TBSI_Repo\FU.ps1 -name $($name) -log $log" -Wait
 }else{
     Logger -level INFO -message "No follow-up task found" -log $log
 }
