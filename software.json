@@ -1,5 +1,16 @@
 [
     {
+        "id":"000",
+        "vender":"",
+        "file":"",
+        "name":"",
+        "version":"",
+        "switches":"",
+        "installLink":"",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },{
         "id":"001",
         "vender":"Zultys",
         "file":"ZAC_x64-8.4.33.exe",
@@ -163,6 +174,18 @@
         "version":"2.43.0",
         "switches":"/VERYSILENT",
         "installLink":"https://file.ac/dFjsAfJWvPU/Git-2.43.0-64-bit.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"015",
+        "vender":"draw.io",
+        "file":"draw.io-23.0.2-windows-installer.exe",
+        "name":"draw.io 23.0.2",
+        "version":"23.0.2",
+        "switches":"",
+        "installLink":"https://github.com/jgraph/drawio-desktop/releases/download/v23.0.2/draw.io-23.0.2-windows-installer.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
