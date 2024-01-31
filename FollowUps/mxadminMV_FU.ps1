@@ -2,12 +2,12 @@
 #Copy the needed folders for other MXAdmin versions
 #>
 
-$src = "https://file.ac/YzdYUQfTRc8/"
-$arrFolders = @("MXAdmin16.04",
-"MXAdmin17.10",
-"MXAdminShortcuts")
+$src = "https://file.ac/YzdYUQfTRc8/MXAdmin.zip"
+$dst = "C:\TBSI_Repo\MXAdmin.zip"
+$pfDST = "C:\Program Files (x86)\Zultys"
 
-foreach ($folder in $arrFolders) {
-    $dl = $src + $folder
-    curl.exe $dl -o "C:\Program Files (x86)\Zultys\$($folder)\"
-}
+curl.exe $src -o $dst
+
+Expand-Archive -LiteralPath $dst -DestinationPath $pfDST -Force
+
+Move-Item -Path "$($pfDST)\MXAdminShortcuts" -Destination "C:\Users\Public\Desktop"
