@@ -10,7 +10,8 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },{
+    },
+    {
         "id":"001",
         "vender":"Zultys",
         "file":"ZAC_x64-8.4.33.exe",
@@ -174,6 +175,30 @@
         "version":"23.0.2",
         "switches":"",
         "installLink":"https://file.ac/aaQ0QD4M7x8/draw.io-23.0.2-windows-installer.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"016",
+        "vender":"Poly",
+        "file":"PolyLens-1.3.1.msi",
+        "name":"Poly Lens",
+        "version":"1.3.1",
+        "switches":"",
+        "installLink":"https://file.ac/L2qESBBwCi4/PolyLens-1.3.1.msi",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"017",
+        "vender":"Poly",
+        "file":"PlantronicsHubInstaller.exe",
+        "name":"Plantronics Hub Software",
+        "version":"3.24.2",
+        "switches":"",
+        "installLink":"https://file.ac/L2qESBBwCi4/PlantronicsHubInstaller.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
