@@ -143,18 +143,6 @@
         "uninstallstring":""
     },
     {
-        "id":"012",
-        "vender":"Zultys",
-        "file":"MXAdmin17.9.13400.exe",
-        "name":"MXAdmin version 17.9.13400",
-        "version":"17.9.13400",
-        "switches":"/VERYSILENT",
-        "installLink":"https://file.ac/YzdYUQfTRc8/MXAdmin17.9.13400.exe",
-        "preflight":"",
-        "fuscript":"FollowUps/mxadminMV_FU.ps1",
-        "uninstallstring":""
-    },
-    {
         "id":"013",
         "vender":"Microsoft",
         "file":"VSCodeSetup-x64-1.85.2.exe",
