@@ -362,11 +362,11 @@
     {
         "id":"031",
         "vender":"NEC",
-        "file":"SV9100_CP10_PCProv12.10.5­0.msi",
+        "file":"SV9100_CP10_PCProv12.10.50.msi",
         "name":"SV9100 CP10 PCPro",
         "version":"12.10.50",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SV9100_CP10_PCProv12.10.5­0.msi",
+        "installLink":"https://file.ac/pnhU7iw8R8Y/SV9100_CP10_PCProv12.10.50.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -374,23 +374,11 @@
     {
         "id":"032",
         "vender":"NEC",
-        "file":"SL1100_PCPro_US_7.20.exe",
-        "name":"SL1100 PCPro",
-        "version":"7.20.00",
-        "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SL1100_PCPro_US_7.20.exe",
-        "preflight":"",
-        "fuscript":"",
-        "uninstallstring":""
-    },
-    {
-        "id":"033",
-        "vender":"NEC",
-        "file":"SV9100_CP20_PC_Pro_US_13.­00.50.msi",
+        "file":"SV9100_CP20_PC_Pro_US_13.00.50.msi",
         "name":"SV9100 CP20 PC Pro",
         "version":"13.00.50",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SV9100_CP20_PC_Pro_US_13.­00.50.msi",
+        "installLink":"https://file.ac/pnhU7iw8R8Y/SV9100_CP20_PC_Pro_US_13.00.50.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
