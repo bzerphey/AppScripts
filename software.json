@@ -216,11 +216,11 @@
     },{
         "id":"019",
         "vender":"Igor Pavlov",
-        "file":"7z2401-x64.exe",
-        "name":"7-Zip 24.01 (x64)",
-        "version":"24.01",
-        "switches":"/S",
-        "installLink":"https://file.ac/v7nDYBZ1z-E/7z2401-x64.exe",
+        "file":"7z2301-x64.msi",
+        "name":"7-Zip 23.01 (x64)",
+        "version":"23.01",
+        "switches":"",
+        "installLink":"https://file.ac/v7nDYBZ1z-E/7z2301-x64.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
