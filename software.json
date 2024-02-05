@@ -401,7 +401,7 @@
         "file":"audacity-win-3.4.2-64bit.exe",
         "name":"Audacity 3.4.2",
         "version":"3.4.2",
-        "switches":"",
+        "switches":"/VERYSILENT /NORESTART",
         "installLink":"https://file.ac/JEwb3J9jCv0/audacity-win-3.4.2-64bit.exe",
         "preflight":"",
         "fuscript":"",
