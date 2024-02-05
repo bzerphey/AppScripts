@@ -300,13 +300,13 @@
         "uninstallstring":""
     },
     {
-        "id":"000",
-        "vender":"",
-        "file":"",
-        "name":"",
-        "version":"",
+        "id":"026",
+        "vender":"Zultys",
+        "file":"MXReport-4.2.1.25.exe",
+        "name":"MXReport",
+        "version":"4.2.1.25",
         "switches":"",
-        "installLink":"",
+        "installLink":"https://file.ac/S4MDAzcG5N4/MXReport-4.2.1.25.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
