@@ -312,13 +312,13 @@
         "uninstallstring":""
     },
     {
-        "id":"000",
-        "vender":"",
-        "file":"",
-        "name":"",
-        "version":"",
+        "id":"027",
+        "vender":"Desi",
+        "file":"desi-setup-x64-3.8.23.0.msi",
+        "name":"DESI Labeling System",
+        "version":"3.8.23.0",
         "switches":"",
-        "installLink":"",
+        "installLink":"https://file.ac/G0snHB_T-mE/desi-setup-x64-3.8.23.0.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
