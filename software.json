@@ -289,12 +289,12 @@
     },
     {
         "id":"025",
-        "vender":"Npcap",
-        "file":"npcap-1.79.exe",
-        "name":"Npcap",
-        "version":"1.79",
+        "vender":"",
+        "file":"",
+        "name":"",
+        "version":"",
         "switches":"",
-        "installLink":"https://file.ac/iqf164AUFCI/npcap-1.79.exe",
+        "installLink":"",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
