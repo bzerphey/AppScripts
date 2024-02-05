@@ -48,7 +48,7 @@
         "uninstallstring":""
     },
     {
-        "id":"*Depricated*004",
+        "id":"*Deprecated*004",
         "vender":"Microsoft",
         "file":"Skype-8.108.0.205.exe",
         "name":"Skype version 8.108",
@@ -199,6 +199,39 @@
         "version":"3.24.2",
         "switches":"",
         "installLink":"https://file.ac/L2qESBBwCi4/PlantronicsHubInstaller.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },{
+        "id":"018",
+        "vender":"Adobe",
+        "file":"AcroRdrDC2300820470_en_US.exe",
+        "name":"Adobe Acrobat (64-bit)",
+        "version":"23.008.20470",
+        "switches":"/sAll /rs /msi EULA_ACCEPT=YES",
+        "installLink":"https://file.ac/Ei6ZBU-InBw/AcroRdrDC2300820470_en_US.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },{
+        "id":"019",
+        "vender":"Igor Pavlov",
+        "file":"7z2401-x64.exe",
+        "name":"7-Zip 24.01 (x64)",
+        "version":"24.01",
+        "switches":"",
+        "installLink":"https://file.ac/v7nDYBZ1z-E/7z2401-x64.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },{
+        "id":"020",
+        "vender":"Famatech",
+        "file":"Advanced_IP_Scanner_2.5.4594.1.exe",
+        "name":"Advanced IP Scanner 2.5.1",
+        "version":"2.5.4594.1",
+        "switches":"",
+        "installLink":"https://file.ac/o3BUEo_4Ong/Advanced_IP_Scanner_2.5.4594.1.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
