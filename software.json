@@ -382,6 +382,18 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"033",
+        "vender":"Viking",
+        "file":"setup.exe",
+        "name":"CTG-2A Software",
+        "version":"2.3.7752.33629",
+        "switches":"",
+        "installLink":"https://file.ac/BZxIWgBi5R0/setup.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 
 ]
