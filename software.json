@@ -202,7 +202,8 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },{
+    },
+    {
         "id":"018",
         "vender":"Adobe",
         "file":"AcroRdrDC2300820470_en_US.exe",
@@ -213,7 +214,8 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },{
+    },
+    {
         "id":"019",
         "vender":"Igor Pavlov",
         "file":"7z2301-x64.msi",
@@ -224,7 +226,8 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },{
+    },
+    {
         "id":"020",
         "vender":"Famatech",
         "file":"Advanced_IP_Scanner_2.5.4594.1.exe",
@@ -235,7 +238,8 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },{
+    },
+    {
         "id":"021",
         "vender":"Connectwise",
         "file":"CWPSA.msi",
@@ -246,13 +250,14 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },{
+    },
+    {
         "id":"022",
         "vender":"Fortinet",
         "file":"FortiClientVPN.exe",
         "name":"FortiClient VPN",
         "version":"7.2.3.929",
-        "switches":"",
+        "switches":"-quiet -norestart",
         "installLink":"https://file.ac/0HTg27RjrM0/FortiClientVPN.exe",
         "preflight":"",
         "fuscript":"",
