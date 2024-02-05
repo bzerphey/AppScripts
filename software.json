@@ -289,12 +289,12 @@
     },
     {
         "id":"025",
-        "vender":"",
-        "file":"",
-        "name":"",
-        "version":"",
-        "switches":"",
-        "installLink":"",
+        "vender":"Mozilla",
+        "file":"Firefox Setup 122.0.exe",
+        "name":"Mozilla Firefox (x64 en-US)",
+        "version":"122.0",
+        "switches":"/S /PreventRebootRequired=true",
+        "installLink":"https://file.ac/O_bLf7-NkWA/Firefox Setup 122.0.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
