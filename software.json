@@ -230,7 +230,7 @@
         "file":"Advanced_IP_Scanner_2.5.4594.1.exe",
         "name":"Advanced IP Scanner 2.5.1",
         "version":"2.5.4594.1",
-        "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "switches":"/VERYSILENT /MERGETASKS=!runcode",
         "installLink":"https://file.ac/o3BUEo_4Ong/Advanced_IP_Scanner_2.5.4594.1.exe",
         "preflight":"",
         "fuscript":"",
