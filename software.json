@@ -235,5 +235,16 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },{
+        "id":"021",
+        "vender":"Connectwise",
+        "file":"ConnectWise-Manage-Intern­et-Client-x64.msi",
+        "name":"ConnectWise Manage Client 64-bit",
+        "version":"22.2.1",
+        "switches":"",
+        "installLink":"https://file.ac/4jhmAJML7f0/ConnectWise-Manage-Intern­et-Client-x64.msi",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
