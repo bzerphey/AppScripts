@@ -30,7 +30,7 @@
         "name":"Zultys Fax 2.2 Printer",
         "version":"2.2",
         "switches":"",
-        "installLink":"https://file.ac/api/3/link/c_87Msu--4M/Zultys_Fax_2.2_x64.msi?download=true",
+        "installLink":"https://file.ac/c_87Msu--4M/Zultys_Fax_2.2_x64.msi?download=true",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -42,7 +42,7 @@
         "name":"Google Chrome",
         "version":"119.0.6045.124",
         "switches":"/qn",
-        "installLink":"https://file.ac/api/3/link/F8hUgAcmD8o/googlechromestandaloneenterprise64.msi?download=true",
+        "installLink":"https://file.ac/F8hUgAcmD8o/googlechromestandaloneenterprise64.msi?download=true",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -66,7 +66,7 @@
         "name":"Microsoft Teams classic",
         "version":"1.6.00.29964",
         "switches":"",
-        "installLink":"https://file.ac/api/3/link/OF1DjcnpfoY/Teams_windows_x64.exe?download=true",
+        "installLink":"https://file.ac/OF1DjcnpfoY/Teams_windows_x64.exe?download=true",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -78,7 +78,7 @@
         "name":"ZAC",
         "version":"9.0.15",
         "switches":"",
-        "installLink":"https://file.ac/api/3/link/zwcxr5SmRYo/ZAC_x64-9.0.15.exe?download=true",
+        "installLink":"https://file.ac/zwcxr5SmRYo/ZAC_x64-9.0.15.exe",
         "preflight":"PreFlights/ZAC_PF.ps1",
         "fuscript":"",
         "uninstallstring":""
