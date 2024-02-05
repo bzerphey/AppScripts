@@ -246,5 +246,16 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },{
+        "id":"022",
+        "vender":"Fortinet",
+        "file":"FortiClientVPN.exe",
+        "name":"FortiClient VPN",
+        "version":"7.2.3.929",
+        "switches":"",
+        "installLink":"https://file.ac/0HTg27RjrM0/FortiClientVPN.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
