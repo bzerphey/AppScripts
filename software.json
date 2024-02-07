@@ -406,5 +406,6 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    }
+    },
+    {}
 ]
