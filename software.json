@@ -406,5 +406,17 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"035",
+        "vender":"Airtame",
+        "file":"Airtame-4.9.0-setup.msi",
+        "name":"Airtame",
+        "version":"4.9.0",
+        "switches":"",
+        "installLink":"https://file.ac/I1cQFMIVb_E/Airtame-4.9.0-setup.msi",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
