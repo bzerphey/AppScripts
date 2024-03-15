@@ -60,7 +60,7 @@
         "uninstallstring":""
     },
     {
-        "id":"005",
+        "id":"*Depricated*005",
         "vender":"Microsoft",
         "file":"Teams_windows_x64.exe",
         "name":"Microsoft Teams classic",
