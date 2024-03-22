@@ -13,3 +13,4 @@ $jsons | ForEach-Object {
     $script = ".\Install_v2.ps1 -Id " + $_.ID
     & $script
 }
+#Test
