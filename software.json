@@ -418,5 +418,17 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"036",
+        "vender":"Google",
+        "file":"",
+        "name":"",
+        "version":"",
+        "switches":"",
+        "installLink":"",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
