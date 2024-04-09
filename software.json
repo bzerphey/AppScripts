@@ -418,5 +418,29 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"036",
+        "vender":"Cybereason",
+        "file":"CybereasonSensor64_23_1_231_1_mchc-america_mchc-america-r.cybereason.net_443_ACTIVE_NORMAL.exe",
+        "name":"Cybereason Sensor",
+        "version":"23.1.231.1",
+        "switches":"",
+        "installLink":"https://file.ac/TwksZgBuOSQ/CybereasonSensor64_23_1_231_1_mchc-america_mchc-america-r.cybereason.net_443_ACTIVE_NORMAL.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"037",
+        "vender":"Zscaler",
+        "file":"Zscaler-windows-4.3.0.161-installer-x64.msi",
+        "name":"Zscaler",
+        "version":"4.3.0.161",
+        "switches":"",
+        "installLink":"https://file.ac/kkbZOfymoSw/Zscaler-windows-4.3.0.161-installer-x64.msi",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
