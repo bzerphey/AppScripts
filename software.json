@@ -442,5 +442,17 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"038",
+        "vender":"Zultys",
+        "file":"ZAC_x64-9.0.24.exe",
+        "name":"ZAC",
+        "version":"9.0.24",
+        "switches":"",
+        "installLink":"https://file.ac/kERzqA5i7XI/ZAC_x64-9.0.24.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
