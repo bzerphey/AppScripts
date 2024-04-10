@@ -12,7 +12,7 @@
         "uninstallstring":""
     },
     {
-        "id":"001",
+        "id":"*Deprecated*001",
         "vender":"Zultys",
         "file":"ZAC_x64-8.4.33.exe",
         "name":"ZAC",
@@ -72,7 +72,7 @@
         "uninstallstring":""
     },
     {
-        "id":"006",
+        "id":"*Deprecated*006",
         "vender":"Zultys",
         "file":"ZAC_x64-9.0.15.exe",
         "name":"ZAC",
