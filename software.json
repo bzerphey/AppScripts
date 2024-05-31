@@ -222,7 +222,7 @@
         "name":"7-Zip 23.01 (x64)",
         "version":"23.01",
         "switches":"",
-        "installLink":"https://file.ac/v7nDYBZ1z-E/7z2301-x64.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/7Zip/7z2301-x64.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
