@@ -30,7 +30,7 @@
         "name":"Zultys Fax 2.2 Printer",
         "version":"2.2",
         "switches":"",
-        "installLink":"https://file.ac/c_87Msu--4M/Zultys_Fax_2.2_x64.msi?download=true",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Zultys%20Fax%202.2%20Printer/Zultys_Fax_2.2_x64.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -42,7 +42,7 @@
         "name":"Google Chrome",
         "version":"119.0.6045.124",
         "switches":"/qn",
-        "installLink":"https://file.ac/F8hUgAcmD8o/googlechromestandaloneenterprise64.msi?download=true",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Google Chrome/googlechromestandaloneenterprise64.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -66,7 +66,7 @@
         "name":"Microsoft Teams classic",
         "version":"1.6.00.29964",
         "switches":"",
-        "installLink":"https://file.ac/OF1DjcnpfoY/Teams_windows_x64.exe?download=true",
+        "installLink":"",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -78,7 +78,7 @@
         "name":"ZAC",
         "version":"9.0.15",
         "switches":"",
-        "installLink":"https://file.ac/zwcxr5SmRYo/ZAC_x64-9.0.15.exe",
+        "installLink":"",
         "preflight":"PreFlights/ZAC_PF.ps1",
         "fuscript":"",
         "uninstallstring":""
@@ -90,7 +90,7 @@
         "name":"Skype version 8.111",
         "version":"8.111.0.607",
         "switches":"/VERYSILENT /MERGETASKS=!runcode",
-        "installLink":"https://file.ac/ZJPJoLna1tU/Skype-8.111.0.607.exe?download=true",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Skype/Skype-8.111.0.607.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -102,7 +102,7 @@
         "name":"Wisenet WAVE Client",
         "version":"5.1.1.37512",
         "switches":"",
-        "installLink":"https://file.ac/ylUfGr0yeCc/wave-client-5.1.1.37512-windows_x64.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Wave/wave-client-5.1.1.37512-windows_x64.exe",
         "preflight":"PreFlights/wave_PF.ps1",
         "fuscript":"FollowUps/wave_FU.ps1",
         "uninstallstring":""
@@ -114,7 +114,7 @@
         "name":"MXAdmin version 16.0.04",
         "version":"16.0.04",
         "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
-        "installLink":"https://file.ac/YzdYUQfTRc8/MXAdmin16.0.04.exe",
+        "installLink":"",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -150,7 +150,7 @@
         "name":"Microsoft Visual Studio Code",
         "version":"1.85.2",
         "switches":"/VERYSILENT /MERGETASKS=!runcode",
-        "installLink":"https://file.ac/Wvj80ImVhiY/VSCodeSetup-x64-1.85.2.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/VSCode/VSCodeSetup-x64-1.85.2.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -162,7 +162,7 @@
         "name":"Git",
         "version":"2.43.0",
         "switches":"/VERYSILENT",
-        "installLink":"https://file.ac/dFjsAfJWvPU/Git-2.43.0-64-bit.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Git/Git-2.43.0-64-bit.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -174,7 +174,7 @@
         "name":"draw.io 23.0.2",
         "version":"23.0.2",
         "switches":"",
-        "installLink":"https://file.ac/aaQ0QD4M7x8/draw.io-23.0.2-windows-installer.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Draw.io/draw.io-23.0.2-windows-installer.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -186,7 +186,7 @@
         "name":"Poly Lens",
         "version":"1.3.1",
         "switches":"",
-        "installLink":"https://file.ac/L2qESBBwCi4/PolyLens-1.3.1.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Poly/PolyLens-1.3.1.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -198,7 +198,7 @@
         "name":"Plantronics Hub Software",
         "version":"3.24.2",
         "switches":"",
-        "installLink":"https://file.ac/L2qESBBwCi4/PlantronicsHubInstaller.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Poly/PlantronicsHubInstaller.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -210,7 +210,7 @@
         "name":"Adobe Acrobat (64-bit)",
         "version":"23.008.20470",
         "switches":"/sAll /rs /msi EULA_ACCEPT=YES",
-        "installLink":"https://file.ac/Ei6ZBU-InBw/AcroRdrDC2300820470_en_US.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Adobe%20Reader/AcroRdrDC2300820470_en_US.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -234,7 +234,7 @@
         "name":"Advanced IP Scanner 2.5.1",
         "version":"2.5.4594.1",
         "switches":"/VERYSILENT /MERGETASKS=!runcode",
-        "installLink":"https://file.ac/o3BUEo_4Ong/Advanced_IP_Scanner_2.5.4594.1.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/AdvancedIPScanner/Advanced_IP_Scanner_2.5.4594.1.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -246,7 +246,7 @@
         "name":"ConnectWise Manage Client 64-bit",
         "version":"22.2.1",
         "switches":"",
-        "installLink":"https://file.ac/4jhmAJML7f0/CWPSA.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/CW%20PSA/CWPSA.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -258,7 +258,7 @@
         "name":"FortiClient VPN",
         "version":"7.2.3.929",
         "switches":"-quiet -norestart",
-        "installLink":"https://file.ac/0HTg27RjrM0/FortiClientVPN.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Fortinet/FortiClientVPN.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -270,7 +270,7 @@
         "name":"PuTTY release 0.80 (64-bit)",
         "version":"0.80.0.0",
         "switches":"",
-        "installLink":"https://file.ac/PqqzRWGVKhQ/putty-64bit-0.80-installer.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Putty/putty-64bit-0.80-installer.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -282,7 +282,7 @@
         "name":"Wireshark 4.2.2 64-bit",
         "version":"",
         "switches":"/S /desktopicon",
-        "installLink":"https://file.ac/iqf164AUFCI/Wireshark-4.2.2-x64.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Wireshark/Wireshark-4.2.2-x64.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -294,7 +294,7 @@
         "name":"Mozilla Firefox (x64 en-US)",
         "version":"122.0",
         "switches":"/S /PreventRebootRequired=true",
-        "installLink":"https://file.ac/O_bLf7-NkWA/FirefoxSetup122.0.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Firefox/FirefoxSetup122.0.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -306,7 +306,7 @@
         "name":"MXReport",
         "version":"4.2.1.25",
         "switches":"",
-        "installLink":"https://file.ac/S4MDAzcG5N4/MXReport-4.2.1.25.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXReport/MXReport-4.2.1.25.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -318,7 +318,7 @@
         "name":"DESI Labeling System",
         "version":"3.8.23.0",
         "switches":"",
-        "installLink":"https://file.ac/G0snHB_T-mE/desi-setup-x64-3.8.23.0.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Desi/desi-setup-x64-3.8.23.0.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -330,7 +330,7 @@
         "name":"SV8100 PCPro",
         "version":"11.10",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SV8100_PCPro_US_11.10.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/NEC/SV8100_PCPro_US_11.10.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -342,7 +342,7 @@
         "name":"UX5000 PCPro",
         "version":"3.02",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/UX5000_PCPro_302.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/NEC/UX5000_PCPro_302.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -354,7 +354,7 @@
         "name":"SL2100 PC Pro",
         "version":"2.00.04",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SL2100_PCPro_2.00.04.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/NEC/SL2100_PCPro_2.00.04.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -366,7 +366,7 @@
         "name":"SV9100 CP10 PCPro",
         "version":"12.10.50",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SV9100_CP10_PCProv12.10.50.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/NEC/SV9100_CP10_PCProv12.10.50.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -378,7 +378,7 @@
         "name":"SV9100 CP20 PC Pro",
         "version":"13.00.50",
         "switches":"",
-        "installLink":"https://file.ac/pnhU7iw8R8Y/SV9100_CP20_PC_Pro_US_13.00.50.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/NEC/SV9100_CP20_PC_Pro_US_13.00.50.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -390,7 +390,7 @@
         "name":"CTG-2A Software",
         "version":"2.3.7752.33629",
         "switches":"",
-        "installLink":"https://file.ac/BZxIWgBi5R0/setup.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Viking/setup.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -402,7 +402,7 @@
         "name":"Audacity 3.4.2",
         "version":"3.4.2",
         "switches":"/VERYSILENT /MERGETASKS=!runcode",
-        "installLink":"https://file.ac/JEwb3J9jCv0/audacity-win-3.4.2-64bit.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Audacity/audacity-win-3.4.2-64bit.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -414,7 +414,7 @@
         "name":"Airtame",
         "version":"4.9.0",
         "switches":"",
-        "installLink":"https://file.ac/I1cQFMIVb_E/Airtame-4.9.0-setup.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Airtame/Airtame-4.9.0-setup.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -426,7 +426,7 @@
         "name":"Cybereason Sensor",
         "version":"23.1.231.1",
         "switches":"",
-        "installLink":"https://file.ac/TwksZgBuOSQ/CybereasonSensor64_23_1_231_1_mchc-america_mchc-america-r.cybereason.net_443_ACTIVE_NORMAL.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Cybereason/CybereasonSensor64_23_1_231_1_mchc-america_mchc-america-r.cybereason.net_443_ACTIVE_NORMAL.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -438,7 +438,7 @@
         "name":"Zscaler",
         "version":"4.3.0.161",
         "switches":"",
-        "installLink":"https://file.ac/kkbZOfymoSw/Zscaler-windows-4.3.0.161-installer-x64.msi",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Zscaler/Zscaler-windows-4.3.0.161-installer-x64.msi",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -450,7 +450,7 @@
         "name":"ZAC",
         "version":"9.0.24",
         "switches":"",
-        "installLink":"https://file.ac/kERzqA5i7XI/ZAC_x64-9.0.24.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/ZAC 9.0.24/ZAC_x64-9.0.24.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
