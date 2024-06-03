@@ -466,5 +466,17 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"040",
+        "vender":"Zultys",
+        "file":"MXAdmin18.0.04.exe",
+        "name":"MXAdmin version 18.0.04",
+        "version":"18.0.04",
+        "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin.zip",
+        "preflight":"PreFlights/unpack_ZIP.ps1",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
