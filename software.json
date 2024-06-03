@@ -114,7 +114,7 @@
         "name":"MXAdmin version 16.0.04",
         "version":"16.0.04",
         "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
-        "installLink":"",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin16.0.04.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -126,7 +126,7 @@
         "name":"MXAdmin version 17.0.10",
         "version":"17.0.10",
         "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
-        "installLink":"https://file.ac/YzdYUQfTRc8/MXAdmin17.0.10.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin17.0.10.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -138,7 +138,7 @@
         "name":"MXAdmin version 17.9.13400",
         "version":"17.9.13400",
         "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
-        "installLink":"https://file.ac/YzdYUQfTRc8/MXAdmin17.9.13400.exe",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin17.9.13400.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
@@ -451,6 +451,18 @@
         "version":"9.0.24",
         "switches":"",
         "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/ZAC 9.0.24/ZAC_x64-9.0.24.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"039",
+        "vender":"Zultys",
+        "file":"MXAdmin18.0.04.exe",
+        "name":"MXAdmin version 18.0.04",
+        "version":"18.0.04",
+        "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin18.0.04.exe",
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
