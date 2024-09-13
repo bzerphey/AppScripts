@@ -490,5 +490,17 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"042",
+        "vender":"CCC",
+        "file":"PinnaclePro_windows-x64.exe",
+        "name":"Pinnacle Professional (192.168.1.2) 1.10.53",
+        "version":"1.10.53",
+        "switches":"-Dname='pinpro'",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Pinnacle/PinnaclePro_windows-x64.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
