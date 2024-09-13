@@ -480,18 +480,6 @@
         "uninstallstring":""
     },
     {
-        "id":"041",
-        "vender":"Microsoft",
-        "file":"setup.exe",
-        "name":"Microsoft Visio - en-us",
-        "version":"16.0.17830.20166",
-        "switches":"/configure 'C:\Windows\LTSvc\packages\visio_p2.xml'",
-        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Microsoft%20Office/setup.exe",
-        "preflight":"",
-        "fuscript":"",
-        "uninstallstring":""
-    },
-    {
         "id":"042",
         "vender":"CCC",
         "file":"PinnaclePro_windows-x64.exe",
