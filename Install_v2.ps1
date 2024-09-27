@@ -83,17 +83,7 @@ if ($var -ne $null){
 }
 
 Logger -level INFO -message "Starting checks for $($name)" -log $log
-# Preflight tasks
-Logger -level INFO -message "Checking for preflight tasks..." -log $log
 
-if ($PreFlight -ne ""){
-    Logger -level INFO -message "Preflight file found. Running task..." -log $log
-    $pfDL = $root + $PreFlight
-    curl.exe $pfDL -o ".\PF.ps1"
-    Start-Process "C:\TBSI_Repo\PF.ps1 -name $($name) -log $log" -Wait
-}else{
-    Logger -level INFO -message "Preflight not found. Continuing script..." -log $log
-}
 
 #Download files
 Logger -level INFO -message "Downloading install files..." -log $log
@@ -105,6 +95,18 @@ catch {
     Logger -level ERROR -message "An error occured in curl request: $_" -log $log
     Exit
 } 
+
+# Preflight tasks
+Logger -level INFO -message "Checking for preflight tasks..." -log $log
+
+if ($PreFlight -ne ""){
+    Logger -level INFO -message "Preflight file found. Running task..." -log $log
+    $pfDL = $root + $PreFlight
+    curl.exe $pfDL -o ".\PF.ps1"
+    Start-Process "C:\TBSI_Repo\PF.ps1 -name $($name) -log $log" -Wait
+}else{
+    Logger -level INFO -message "Preflight not found. Continuing script..." -log $log
+}
 
 #File Check
 $installer = ".\" + $file
