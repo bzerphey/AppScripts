@@ -418,5 +418,89 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"036",
+        "vender":"Cybereason",
+        "file":"CybereasonSensor64_23_1_231_1_mchc-america_mchc-america-r.cybereason.net_443_ACTIVE_NORMAL.exe",
+        "name":"Cybereason Sensor",
+        "version":"23.1.231.1",
+        "switches":"",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Cybereason/CybereasonSensor64_23_1_231_1_mchc-america_mchc-america-r.cybereason.net_443_ACTIVE_NORMAL.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"037",
+        "vender":"Zscaler",
+        "file":"Zscaler-windows-4.3.0.161-installer-x64.msi",
+        "name":"Zscaler",
+        "version":"4.3.0.161",
+        "switches":"",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Zscaler/Zscaler-windows-4.3.0.161-installer-x64.msi",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"038",
+        "vender":"Zultys",
+        "file":"ZAC_x64-9.0.24.exe",
+        "name":"ZAC",
+        "version":"9.0.24",
+        "switches":"",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/ZAC 9.0.24/ZAC_x64-9.0.24.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"039",
+        "vender":"Zultys",
+        "file":"MXAdmin18.0.04.exe",
+        "name":"MXAdmin version 18.0.04",
+        "version":"18.0.04",
+        "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin18.0.04.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"040",
+        "vender":"Zultys",
+        "file":"MXAdmin18.0.04.exe",
+        "name":"MXAdmin version 18.0.04",
+        "version":"18.0.04",
+        "switches":"/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/MXAdmin/MXAdmin.zip",
+        "preflight":"PreFlights/unpack_ZIP.ps1",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"042",
+        "vender":"CCC",
+        "file":"PinnaclePro_windows-x64.exe",
+        "name":"Pinnacle Professional (192.168.1.2) 1.10.53",
+        "version":"1.10.53",
+        "switches":"-Dname='pinpro'",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Pinnacle/PinnaclePro_windows-x64.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
+    },
+    {
+        "id":"036",
+        "vender":"Fortinet",
+        "file":"FortiClientVPN7.4.exe",
+        "name":"FortiClient VPN",
+        "version":"7.4.0.1658",
+        "switches":"-quiet -norestart",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Fortinet/FortiClientVPN7.4.exe",
+        "preflight":"",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
