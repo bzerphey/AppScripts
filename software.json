@@ -418,17 +418,5 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
-    },
-    {
-        "id":"036",
-        "vender":"Fortinet",
-        "file":"FortiClientVPN7.4.exe",
-        "name":"FortiClient VPN",
-        "version":"7.4.0.1658",
-        "switches":"-quiet -norestart",
-        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Fortinet/FortiClientVPN7.4.exe",
-        "preflight":"",
-        "fuscript":"",
-        "uninstallstring":""
     }
 ]
