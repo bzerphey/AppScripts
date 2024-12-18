@@ -450,8 +450,8 @@
         "name":"ZAC",
         "version":"9.0.24",
         "switches":"",
-        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/ZAC 9.0.24/ZAC_x64-9.0.24.exe",
-        "preflight":"",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/ZAC%209.0.24/ZAC_x64-9.0.24.exe",
+        "preflight":"PreFlights/ZAC_PF.ps1",
         "fuscript":"",
         "uninstallstring":""
     },
