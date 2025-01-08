@@ -502,5 +502,17 @@
         "preflight":"",
         "fuscript":"",
         "uninstallstring":""
+    },
+    {
+        "id":"044",
+        "vender":"Zultys",
+        "file":"ZAC_x64-9.2.6.exe",
+        "name":"ZAC",
+        "version":"9.2.6",
+        "switches":"",
+        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/ZAC%209.2.6/ZAC_x64-9.2.6.exe",
+        "preflight":"PreFlights/ZAC_PF.ps1",
+        "fuscript":"",
+        "uninstallstring":""
     }
 ]
