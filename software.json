@@ -514,17 +514,5 @@
         "preflight":"PreFlights/ZAC_PF.ps1",
         "fuscript":"",
         "uninstallstring":""
-    },
-    {
-        "id":"045",
-        "vender":"Connectwise",
-        "file":"perch-log-shipper-latest.exe",
-        "name":"Perch Log Shipper",
-        "version":"2024.10.10",
-        "switches":"/qn OUTPUT='TOKEN' VALUE='fabeb6ca-7395-4f50-86c8-7e504b81cf10'",
-        "installLink":"https://s3.us-east-2.wasabisys.com/automaterepo/Perch Log Shipper/perch-log-shipper-latest.exe",
-        "preflight":"",
-        "fuscript":"",
-        "uninstallstring":""
     }
 ]
